@@ -6,15 +6,15 @@ export const ACCENT_COLOR = '#00BFFF';
 export const ARTIFACTS: Artifact[] = [
   {
     id: '1',
-    title: { EN: 'VISION', RU: 'ВИДЕНИЕ' },
+    title: { EN: 'MUSTANG 66', RU: 'МУСТАНГ 66' },
     price: '$2,400',
     imageUrl: '/images/artifacts/vision-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
-    description: { EN: 'THE BLUEPRINT OF DOMINANCE.', RU: 'ЧЕРТЕЖ ДОМИНИРОВАНИЯ.' },
+    description: { EN: 'AMERICAN MUSCLE ICON.', RU: 'ИКОНА АМЕРИКАНСКОЙ МОЩИ.' },
     materials: {
-      EN: ['AIRCRAFT GRADE ALUMINUM', 'TEMPERED CRYSTAL', 'LIQUID SILICON'],
-      RU: ['АВИАЦИОННЫЙ АЛЮМИНИЙ', 'ЗАКАЛЕННЫЙ КРИСТАЛЛ', 'ЖИДКИЙ КРЕМНИЙ']
+      EN: ['CANVAS PRINT', 'MUSEUM QUALITY', 'BLACK FRAME'],
+      RU: ['ПЕЧАТЬ НА ХОЛСТЕ', 'МУЗЕЙНОЕ КАЧЕСТВО', 'ЧЁРНАЯ РАМА']
     },
     gallery: [
       '/images/artifacts/vision-main.JPG',
@@ -27,15 +27,15 @@ export const ARTIFACTS: Artifact[] = [
   },
   {
     id: '2',
-    title: { EN: 'POWER', RU: 'СИЛА' },
+    title: { EN: 'STINGRAY 67', RU: 'СТИНГРЕЙ 67' },
     price: '$3,800',
     imageUrl: '/images/artifacts/power-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
-    description: { EN: 'RESERVE CURRENCY OF THE ELITE.', RU: 'РЕЗЕРВНАЯ ВАЛЮТА ЭЛИТЫ.' },
+    description: { EN: 'LEGENDARY CORVETTE EXCELLENCE.', RU: 'ЛЕГЕНДАРНОЕ СОВЕРШЕНСТВО КОРВЕТА.' },
     materials: {
-      EN: ['CARBON FIBER WEAVE', 'TITANIUM COMPOSITE', 'NEODYMIUM MAGNETS'],
-      RU: ['УГЛЕРОДНОЕ ВОЛОКНО', 'ТИТАНОВЫЙ КОМПОЗИТ', 'НЕОДИМОВЫЕ МАГНИТЫ']
+      EN: ['FINE ART PAPER', 'ARCHIVAL INK', 'GALLERY FRAME'],
+      RU: ['ХУДОЖЕСТВЕННАЯ БУМАГА', 'АРХИВНЫЕ ЧЕРНИЛА', 'ГАЛЕРЕЙНАЯ РАМА']
     },
     gallery: [
       '/images/artifacts/power-main.JPG',
@@ -48,15 +48,15 @@ export const ARTIFACTS: Artifact[] = [
   },
   {
     id: '3',
-    title: { EN: 'SILENCE', RU: 'ТИШИНА' },
+    title: { EN: 'FASTBACK 65', RU: 'ФАСТБЭК 65' },
     price: '$1,950',
     imageUrl: '/images/artifacts/silence-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
-    description: { EN: 'THE ULTIMATE DEFENSIVE POSTURE.', RU: 'СОВЕРШЕННАЯ ЗАЩИТНАЯ ПОЗИЦИЯ.' },
+    description: { EN: 'CLASSIC PERFORMANCE MACHINE.', RU: 'КЛАССИЧЕСКАЯ МАШИНА ПРОИЗВОДИТЕЛЬНОСТИ.' },
     materials: {
-      EN: ['POLISHED OBSIDIAN', 'SYNTHETIC QUARTZ', 'IONIZED STEEL'],
-      RU: ['ПОЛИРОВАННЫЙ ОБСИДИАН', 'СИНТЕТИЧЕСКИЙ КВАРЦ', 'ИОНИЗИРОВАННАЯ СТАЛЬ']
+      EN: ['PREMIUM CANVAS', 'UV PROTECTION', 'WOOD FRAME'],
+      RU: ['ПРЕМИУМ ХОЛСТ', 'УФ-ЗАЩИТА', 'ДЕРЕВЯННАЯ РАМА']
     },
     gallery: [
       '/images/artifacts/silence-main.JPG',
@@ -69,15 +69,15 @@ export const ARTIFACTS: Artifact[] = [
   },
   {
     id: '4',
-    title: { EN: 'ARTIFACT-4', RU: 'АРТЕФАКТ-4' },
+    title: { EN: 'WEALTH', RU: 'БОГАТСТВО' },
     price: '$2,800',
     imageUrl: '/images/artifacts/artifact-4-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
-    description: { EN: 'PRECISION ENGINEERED EXCELLENCE.', RU: 'ТОЧНОСТЬ ИНЖЕНЕРНОГО СОВЕРШЕНСТВА.' },
+    description: { EN: 'CHAMPAGNE LIFESTYLE STATEMENT.', RU: 'ЗАЯВЛЕНИЕ ШАМПАНСКОГО ОБРАЗА ЖИЗНИ.' },
     materials: {
-      EN: ['BRUSHED STEEL', 'CARBON MATRIX', 'OPTICAL GLASS'],
-      RU: ['БРАШИРОВАННАЯ СТАЛЬ', 'УГЛЕРОДНАЯ МАТРИЦА', 'ОПТИЧЕСКОЕ СТЕКЛО']
+      EN: ['STREET ART CANVAS', 'MIXED MEDIA', 'LUXURY FRAME'],
+      RU: ['ХОЛСТ СТРИТ-АРТ', 'СМЕШАННАЯ ТЕХНИКА', 'ЛЮКСОВАЯ РАМА']
     },
     gallery: [
       '/images/artifacts/artifact-4-main.JPG',
@@ -90,15 +90,15 @@ export const ARTIFACTS: Artifact[] = [
   },
   {
     id: '5',
-    title: { EN: 'ARTIFACT-5', RU: 'АРТЕФАКТ-5' },
+    title: { EN: 'LEGACY', RU: 'НАСЛЕДИЕ' },
     price: '$3,200',
     imageUrl: '/images/artifacts/artifact-5-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
-    description: { EN: 'ARCHITECTURAL STATEMENT PIECE.', RU: 'АРХИТЕКТУРНОЕ ЗАЯВЛЕНИЕ.' },
+    description: { EN: '70 YEARS OF RACING GLORY.', RU: '70 ЛЕТ ГОНОЧНОЙ СЛАВЫ.' },
     materials: {
-      EN: ['MACHINED ALUMINUM', 'POLYMER COMPOSITE', 'ANODIZED FINISH'],
-      RU: ['ОБРАБОТАННЫЙ АЛЮМИНИЙ', 'ПОЛИМЕРНЫЙ КОМПОЗИТ', 'АНОДИРОВАННАЯ ОТДЕЛКА']
+      EN: ['PREMIUM PAPER', 'LAMINATED FINISH', 'FADE RESISTANT'],
+      RU: ['ПРЕМИУМ БУМАГА', 'ЛАМИНИРОВАННАЯ ОТДЕЛКА', 'УСТОЙЧИВОСТЬ К ВЫЦВЕТАНИЮ']
     },
     gallery: [
       '/images/artifacts/artifact-5-main.JPG',
@@ -111,15 +111,15 @@ export const ARTIFACTS: Artifact[] = [
   },
   {
     id: '6',
-    title: { EN: 'ARTIFACT-6', RU: 'АРТЕФАКТ-6' },
+    title: { EN: 'EMPIRE', RU: 'ИМПЕРИЯ' },
     price: '$2,600',
     imageUrl: '/images/artifacts/artifact-6-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
-    description: { EN: 'MINIMALIST POWER DISPLAY.', RU: 'МИНИМАЛИСТИЧНАЯ ДЕМОНСТРАЦИЯ СИЛЫ.' },
+    description: { EN: 'MONEY TALKS. LUXURY ROARS.', RU: 'ДЕНЬГИ ГОВОРЯТ. РОСКОШЬ РЕВЁТ.' },
     materials: {
-      EN: ['STAINLESS STEEL', 'TEMPERED GLASS', 'RUBBER DAMPING'],
-      RU: ['НЕРЖАВЕЮЩАЯ СТАЛЬ', 'ЗАКАЛЁННОЕ СТЕКЛО', 'РЕЗИНОВОЕ ДЕМПФИРОВАНИЕ']
+      EN: ['STREET ART CANVAS', 'HAND FINISHED', 'GALLERY FRAME'],
+      RU: ['ХОЛСТ СТРИТ-АРТ', 'РУЧНАЯ ОТДЕЛКА', 'ГАЛЕРЕЙНАЯ РАМА']
     },
     gallery: [
       '/images/artifacts/artifact-6-main.JPG',
