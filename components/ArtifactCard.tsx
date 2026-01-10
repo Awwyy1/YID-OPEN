@@ -82,12 +82,6 @@ const ArtifactCard: React.FC<ArtifactCardProps> = ({ artifact, theme, language, 
           </button>
         </div>
       </div>
-
-      <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md px-3 py-1 border border-white/10">
-        <span className="text-[8px] tracking-widest text-white/80 uppercase">
-          {language === 'EN' ? 'AVAILABLE ARTIFACT' : 'ДОСТУПНЫЙ АРТЕФАКТ'}
-        </span>
-      </div>
     </div>
   );
 };

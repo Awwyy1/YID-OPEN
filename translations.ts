@@ -3,8 +3,8 @@ import { Language } from './types';
 
 export const UI_TRANSLATIONS: Record<Language, any> = {
   EN: {
-    heroTitle: "VISUAL CAPITAL.",
-    heroSub: "THE FINAL ACCENT OF YOUR AMBITION.",
+    heroTitle: "VISUAL CAPITAL",
+    heroSub: "THE FINAL ACCENT OF YOUR AMBITIONS REFLECTED IN DECOR",
     menuShip: "SHIP",
     menuContact: "CONTACT",
     menuAbout: "ABOUT",
@@ -42,8 +42,8 @@ export const UI_TRANSLATIONS: Record<Language, any> = {
     mapSecurity: "ENCRYPTION: AES-256"
   },
   RU: {
-    heroTitle: "ВИЗУАЛЬНЫЙ КАПИТАЛ.",
-    heroSub: "ФИНАЛЬНЫЙ АКЦЕНТ ВАШИХ АМБИЦИЙ.",
+    heroTitle: "ВИЗУАЛЬНЫЙ КАПИТАЛ",
+    heroSub: "ФИНАЛЬНЫЙ АКЦЕНТ ВАШИХ АМБИЦИЙ ОТРАЖЁННЫХ В ДЕКОРЕ",
     menuShip: "ДОСТАВКА",
     menuContact: "КОНТАКТЫ",
     menuAbout: "О НАС",
