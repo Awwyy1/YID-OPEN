@@ -14,89 +14,128 @@ public/
 
 ---
 
-## 🎨 АРТЕФАКТЫ (9 товаров)
+## 🎨 АРТЕФАКТЫ (12 товаров)
 
-### LEVEL 01 CORE (Доступные товары - 3 шт)
+### LEVEL 01 CORE (Доступные товары - 6 шт)
 
 #### 1️⃣ **VISION / ВИДЕНИЕ** (id: '1')
 **Главное фото:**
-- Путь: `public/images/artifacts/vision-main.jpg`
+- Путь: `public/images/artifacts/vision-main.JPG`
 - Размер: минимум 800x1000px (соотношение 4:5)
-- Формат: JPG или PNG
+- Формат: JPG (заглавными буквами!)
 
 **Галерея (5 фото):**
-- `public/images/gallery/vision-1.jpg`
-- `public/images/gallery/vision-2.jpg`
-- `public/images/gallery/vision-3.jpg`
-- `public/images/gallery/vision-4.jpg`
-- `public/images/gallery/vision-5.jpg`
+- `public/images/gallery/vision-1.JPG`
+- `public/images/gallery/vision-2.JPG`
+- `public/images/gallery/vision-3.JPG`
+- `public/images/gallery/vision-4.JPG`
+- `public/images/gallery/vision-5.JPG`
 
 ---
 
 #### 2️⃣ **POWER / СИЛА** (id: '2')
 **Главное фото:**
-- Путь: `public/images/artifacts/power-main.jpg`
+- Путь: `public/images/artifacts/power-main.JPG`
 
 **Галерея (5 фото):**
-- `public/images/gallery/power-1.jpg`
-- `public/images/gallery/power-2.jpg`
-- `public/images/gallery/power-3.jpg`
-- `public/images/gallery/power-4.jpg`
-- `public/images/gallery/power-5.jpg`
+- `public/images/gallery/power-1.JPG`
+- `public/images/gallery/power-2.JPG`
+- `public/images/gallery/power-3.JPG`
+- `public/images/gallery/power-4.JPG`
+- `public/images/gallery/power-5.JPG`
 
 ---
 
 #### 3️⃣ **SILENCE / ТИШИНА** (id: '3')
 **Главное фото:**
-- Путь: `public/images/artifacts/silence-main.jpg`
+- Путь: `public/images/artifacts/silence-main.JPG`
 
 **Галерея (5 фото):**
-- `public/images/gallery/silence-1.jpg`
-- `public/images/gallery/silence-2.jpg`
-- `public/images/gallery/silence-3.jpg`
-- `public/images/gallery/silence-4.jpg`
-- `public/images/gallery/silence-5.jpg`
+- `public/images/gallery/silence-1.JPG`
+- `public/images/gallery/silence-2.JPG`
+- `public/images/gallery/silence-3.JPG`
+- `public/images/gallery/silence-4.JPG`
+- `public/images/gallery/silence-5.JPG`
+
+---
+
+#### 4️⃣ **ARTIFACT-4 / АРТЕФАКТ-4** (id: '4') ✨ НОВЫЙ
+**Главное фото:**
+- Путь: `public/images/artifacts/artifact-4-main.JPG`
+
+**Галерея (5 фото):**
+- `public/images/gallery/artifact-4-1.JPG`
+- `public/images/gallery/artifact-4-2.JPG`
+- `public/images/gallery/artifact-4-3.JPG`
+- `public/images/gallery/artifact-4-4.JPG`
+- `public/images/gallery/artifact-4-5.JPG`
+
+---
+
+#### 5️⃣ **ARTIFACT-5 / АРТЕФАКТ-5** (id: '5') ✨ НОВЫЙ
+**Главное фото:**
+- Путь: `public/images/artifacts/artifact-5-main.JPG`
+
+**Галерея (5 фото):**
+- `public/images/gallery/artifact-5-1.JPG`
+- `public/images/gallery/artifact-5-2.JPG`
+- `public/images/gallery/artifact-5-3.JPG`
+- `public/images/gallery/artifact-5-4.JPG`
+- `public/images/gallery/artifact-5-5.JPG`
+
+---
+
+#### 6️⃣ **ARTIFACT-6 / АРТЕФАКТ-6** (id: '6') ✨ НОВЫЙ
+**Главное фото:**
+- Путь: `public/images/artifacts/artifact-6-main.JPG`
+
+**Галерея (5 фото):**
+- `public/images/gallery/artifact-6-1.JPG`
+- `public/images/gallery/artifact-6-2.JPG`
+- `public/images/gallery/artifact-6-3.JPG`
+- `public/images/gallery/artifact-6-4.JPG`
+- `public/images/gallery/artifact-6-5.JPG`
 
 ---
 
 ### LEVEL 02 LIMITED (Заблокированные - 3 шт)
 
-#### 4️⃣ **ONYX VAULT / ОНИКСОВЫЙ СЕЙФ** (id: '4')
+#### 7️⃣ **ONYX VAULT / ОНИКСОВЫЙ СЕЙФ** (id: '7')
 **Главное фото:**
-- Путь: `public/images/artifacts/onyx-vault-main.jpg`
+- Путь: `public/images/artifacts/onyx-vault-main.JPG`
 - *Примечание: Галерея не нужна (товар заблокирован)*
 
 ---
 
-#### 5️⃣ **GILDED ARMOR / ЗОЛОТАЯ БРОНЯ** (id: '5')
+#### 8️⃣ **GILDED ARMOR / ЗОЛОТАЯ БРОНЯ** (id: '8')
 **Главное фото:**
-- Путь: `public/images/artifacts/gilded-armor-main.jpg`
+- Путь: `public/images/artifacts/gilded-armor-main.JPG`
 
 ---
 
-#### 6️⃣ **CITADEL 01 / ЦИТАДЕЛЬ 01** (id: '6')
+#### 9️⃣ **CITADEL 01 / ЦИТАДЕЛЬ 01** (id: '9')
 **Главное фото:**
-- Путь: `public/images/artifacts/citadel-main.jpg`
+- Путь: `public/images/artifacts/citadel-main.JPG`
 
 ---
 
 ### LEVEL 03 ARCHIVE (Заблокированные - 3 шт)
 
-#### 7️⃣ **MONOLITH / МОНОЛИТ** (id: '7')
+#### 🔟 **MONOLITH / МОНОЛИТ** (id: '10')
 **Главное фото:**
-- Путь: `public/images/artifacts/monolith-main.jpg`
+- Путь: `public/images/artifacts/monolith-main.JPG`
 
 ---
 
-#### 8️⃣ **VOID / ПУСТОТА** (id: '8')
+#### 1️⃣1️⃣ **VOID / ПУСТОТА** (id: '11')
 **Главное фото:**
-- Путь: `public/images/artifacts/void-main.jpg`
+- Путь: `public/images/artifacts/void-main.JPG`
 
 ---
 
-#### 9️⃣ **ECHO / ЭХО** (id: '9')
+#### 1️⃣2️⃣ **ECHO / ЭХО** (id: '12')
 **Главное фото:**
-- Путь: `public/images/artifacts/echo-main.jpg`
+- Путь: `public/images/artifacts/echo-main.JPG`
 
 ---
 
@@ -104,7 +143,7 @@ public/
 
 ### ✅ Требования к изображениям:
 
-1. **Формат:** JPG или PNG (рекомендуется JPG для меньшего размера)
+1. **Формат:** JPG с расширением `.JPG` (заглавными буквами!)
 2. **Размер файла:** не более 500KB для оптимальной загрузки
 3. **Разрешение главных фото:** минимум 800x1000px (соотношение 4:5)
 4. **Разрешение галереи:** минимум 800x800px
@@ -121,49 +160,42 @@ public/
 
 ### Шаг 1: Подготовьте изображения
 - Переименуйте файлы согласно инструкции выше
+- **ВАЖНО:** Используйте расширение `.JPG` (заглавными буквами)
 - Оптимизируйте размер (можно использовать TinyPNG.com)
 
 ### Шаг 2: Загрузите в нужные папки
 ```bash
 # Пример структуры после загрузки:
 public/images/artifacts/
-  ├── vision-main.jpg
-  ├── power-main.jpg
-  ├── silence-main.jpg
-  ├── onyx-vault-main.jpg
-  ├── gilded-armor-main.jpg
-  ├── citadel-main.jpg
-  ├── monolith-main.jpg
-  ├── void-main.jpg
-  └── echo-main.jpg
+  ├── vision-main.JPG         ✅ Загружено
+  ├── power-main.JPG          ✅ Загружено
+  ├── silence-main.JPG        ⏳ Нужно загрузить
+  ├── artifact-4-main.JPG     ⏳ Нужно загрузить (НОВЫЙ)
+  ├── artifact-5-main.JPG     ⏳ Нужно загрузить (НОВЫЙ)
+  ├── artifact-6-main.JPG     ⏳ Нужно загрузить (НОВЫЙ)
+  ├── onyx-vault-main.JPG     ⏳ Нужно загрузить
+  ├── gilded-armor-main.JPG   ⏳ Нужно загрузить
+  ├── citadel-main.JPG        ⏳ Нужно загрузить
+  ├── monolith-main.JPG       ⏳ Нужно загрузить
+  ├── void-main.JPG           ⏳ Нужно загрузить
+  └── echo-main.JPG           ⏳ Нужно загрузить
 
 public/images/gallery/
-  ├── vision-1.jpg
-  ├── vision-2.jpg
-  ├── ... (всего 15 файлов для 3 товаров)
+  ├── vision-1.JPG до vision-5.JPG       (5 файлов)
+  ├── power-1.JPG до power-5.JPG         (5 файлов)
+  ├── silence-1.JPG до silence-5.JPG     (5 файлов)
+  ├── artifact-4-1.JPG до artifact-4-5.JPG  (5 файлов) - НОВЫЙ
+  ├── artifact-5-1.JPG до artifact-5-5.JPG  (5 файлов) - НОВЫЙ
+  └── artifact-6-1.JPG до artifact-6-5.JPG  (5 файлов) - НОВЫЙ
+
+  Всего: 30 файлов для 6 доступных товаров
 ```
 
-### Шаг 3: Обновите файл `constants.ts`
+### Шаг 3: Пути уже прописаны!
 
-Откройте `/constants.ts` и замените URL изображений:
+✅ Все пути уже обновлены в `constants.ts`!
 
-```typescript
-// БЫЛО:
-imageUrl: 'https://images.unsplash.com/photo-...',
-
-// СТАЛО:
-imageUrl: '/images/artifacts/vision-main.jpg',
-
-// Для галереи:
-gallery: [
-  '/images/artifacts/vision-main.jpg',
-  '/images/gallery/vision-1.jpg',
-  '/images/gallery/vision-2.jpg',
-  '/images/gallery/vision-3.jpg',
-  '/images/gallery/vision-4.jpg',
-  '/images/gallery/vision-5.jpg'
-]
-```
+Вам нужно только загрузить фото с правильными именами файлов.
 
 ---
 
@@ -176,7 +208,7 @@ gallery: [
 - Минимум отвлекающих элементов
 - Высокий контраст
 
-### Композиция галереи:
+### Композиция галереи (для каждого из 6 доступных товаров):
 1. Общий план
 2. Детали/крупный план
 3. Вид сверху
@@ -192,10 +224,20 @@ gallery: [
 
 ## ⚠️ ВАЖНО
 
-После добавления фотографий **ОБЯЗАТЕЛЬНО** обновите файл `/constants.ts`:
-- Замените все URL `https://images.unsplash.com/...` на `/images/...`
-- Проверьте, что пути совпадают с названиями файлов
-- Сохраните файл
+### Расширение файлов:
+- ✅ Правильно: `.JPG` (заглавными буквами)
+- ❌ Неправильно: `.jpg`, `.jpeg`, `.Jpg`
+
+### Общее количество файлов:
+
+**Главные фото:** 12 файлов
+- 6 доступных товаров (LEVEL 01 CORE)
+- 3 заблокированных (LEVEL 02 LIMITED)
+- 3 заблокированных (LEVEL 03 ARCHIVE)
+
+**Галереи:** 30 файлов (по 5 фото для каждого из 6 доступных товаров)
+
+**ВСЕГО:** 42 файла
 
 ---
 
@@ -203,8 +245,8 @@ gallery: [
 
 После загрузки проверьте:
 1. Открывается ли главная страница
-2. Отображаются ли карточки товаров
-3. Работает ли галерея при клике на товар
+2. Отображаются ли все 6 карточек в LEVEL 01 CORE
+3. Работает ли галерея при клике на доступные товары
 4. Переключаются ли фото в галерее
 5. Корректно ли отображаются заблокированные товары
 
@@ -214,6 +256,6 @@ gallery: [
 
 Если что-то не работает:
 1. Проверьте консоль браузера (F12 → Console)
-2. Убедитесь, что пути в `constants.ts` совпадают с реальными путями к файлам
+2. Убедитесь, что расширение файлов `.JPG` (заглавными)
 3. Проверьте, что файлы загружены в правильные папки
-4. Убедитесь, что названия файлов точно совпадают (регистр важен!)
+4. Убедитесь, что названия файлов точно совпадают
