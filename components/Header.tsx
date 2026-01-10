@@ -33,12 +33,11 @@ const Header: React.FC<HeaderProps> = ({
 
   const t = UI_TRANSLATIONS[language];
 
-  // NETWORK вынесен на первое место для приоритета
   const menuLinks: { label: string; id: Page }[] = [
     { label: t.menuNetwork, id: 'map' },
-    { label: t.menuShip, id: 'ship' },
     { label: t.menuContact, id: 'contact' },
-    { label: t.menuAbout, id: 'about' }
+    { label: t.menuAbout, id: 'about' },
+    { label: t.menuShip, id: 'ship' }
   ];
 
   const handleLinkClick = (pageId: Page) => {
