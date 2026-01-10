@@ -25,6 +25,16 @@ const WorldMap: React.FC<WorldMapProps> = ({ theme, language, onBack }) => {
     { name: 'HONG KONG', x: 820, y: 260, active: 43, status: 'SECURE', tz: 'GMT+8' },
     { name: 'ZURICH', x: 520, y: 180, active: 31, status: 'SECURE', tz: 'GMT+1' },
     { name: 'SINGAPORE', x: 800, y: 340, active: 19, status: 'SECURE', tz: 'GMT+8' },
+    { name: 'MOSCOW', x: 580, y: 150, active: 67, status: 'SECURE', tz: 'GMT+3' },
+    { name: 'SYDNEY', x: 920, y: 410, active: 38, status: 'SECURE', tz: 'GMT+10' },
+    { name: 'MIAMI', x: 280, y: 280, active: 94, status: 'SECURE', tz: 'GMT-5' },
+    { name: 'BERLIN', x: 510, y: 165, active: 52, status: 'SECURE', tz: 'GMT+1' },
+    { name: 'SEOUL', x: 850, y: 220, active: 71, status: 'SECURE', tz: 'GMT+9' },
+    { name: 'LOS ANGELES', x: 180, y: 240, active: 156, status: 'SECURE', tz: 'GMT-8' },
+    { name: 'TORONTO', x: 270, y: 180, active: 83, status: 'SECURE', tz: 'GMT-5' },
+    { name: 'SAO PAULO', x: 340, y: 380, active: 48, status: 'SECURE', tz: 'GMT-3' },
+    { name: 'MUMBAI', x: 680, y: 270, active: 62, status: 'SECURE', tz: 'GMT+5:30' },
+    { name: 'AMSTERDAM', x: 495, y: 165, active: 45, status: 'SECURE', tz: 'GMT+1' },
   ];
 
   return (

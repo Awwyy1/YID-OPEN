@@ -32,9 +32,9 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
   }, []);
 
   return (
-    <div className={`fixed inset-0 z-[200] ${bgColor} ${textColor} animate-in fade-in duration-500 flex flex-col uppercase overflow-y-auto lg:overflow-hidden`}>
-      <header className={`sticky top-0 shrink-0 w-full h-20 border-b ${borderColor} backdrop-blur-xl flex items-center justify-between px-6 md:px-12 z-50`}>
-        <button 
+    <div className={`fixed inset-0 z-[200] ${bgColor} ${textColor} animate-in fade-in duration-500 flex flex-col uppercase overflow-y-auto`}>
+      <header className={`sticky top-0 shrink-0 w-full h-20 border-b ${borderColor} backdrop-blur-xl flex items-center justify-between px-6 md:px-12 z-50 ${bgColor}`}>
+        <button
           onClick={onClose}
           className="group flex items-center gap-4 text-[10px] font-black tracking-[0.4em] opacity-40 hover:opacity-100 transition-all"
         >
@@ -46,11 +46,11 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
         </div>
       </header>
 
-      <div className="flex-1 w-full max-w-screen-2xl mx-auto px-6 md:px-12 py-8 md:py-12">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 lg:h-full">
+      <div className="w-full max-w-screen-2xl mx-auto px-6 md:px-12 py-8 md:py-12 pb-16">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           {/* Left: Images */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:h-full">
-            <div className={`relative flex-1 min-h-[350px] md:min-h-[500px] lg:min-h-0 overflow-hidden border ${borderColor} bg-neutral-900`}>
+          <div className="w-full lg:w-1/2 flex flex-col gap-6">
+            <div className={`relative w-full aspect-[4/5] lg:aspect-[3/4] overflow-hidden border ${borderColor} bg-neutral-900`}>
                <img
                  key={activeImage}
                  src={activeImage}
@@ -79,8 +79,8 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
           </div>
 
           {/* Right: Content */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-between lg:h-full lg:overflow-y-auto lg:pr-4 custom-scrollbar">
-            <div className="space-y-12">
+          <div className="w-full lg:w-1/2 flex flex-col">
+            <div className="space-y-12 flex-1">
               <section className="pt-0">
                 <p className="text-[9px] tracking-[0.5em] opacity-30 mb-3">{t.classification}</p>
                 <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-6">{title}</h1>
@@ -119,7 +119,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
             </div>
 
             {/* Price & Action Block */}
-            <div className={`mt-12 lg:mt-auto p-8 border ${borderColor} bg-current/5 backdrop-blur-md space-y-8`}>
+            <div className={`mt-12 p-8 border ${borderColor} bg-current/5 backdrop-blur-md space-y-8`}>
               <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-4">
                 <div>
                   <p className="text-[9px] tracking-[0.4em] opacity-30 uppercase">{t.valuation}</p>
@@ -139,7 +139,6 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
                 {t.acquireArtifact}
               </button>
             </div>
-            <div className="h-10 lg:hidden"></div>
           </div>
         </div>
       </div>

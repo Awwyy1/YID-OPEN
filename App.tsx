@@ -94,10 +94,10 @@ const App: React.FC = () => {
             {/* Hero Section */}
             <section className="max-w-screen-2xl mx-auto px-6 mb-32 text-center">
               <div className="space-y-6">
-                <h2 className="text-5xl md:text-8xl font-black tracking-tighter leading-none mb-4 whitespace-pre-line">
+                <h2 className="text-5xl md:text-[8.5rem] font-black tracking-tighter leading-none mb-4 whitespace-pre-line">
                   {t.heroTitle}
                 </h2>
-                <p className="text-xs md:text-sm tracking-[0.5em] font-light opacity-60">
+                <p className="text-[11px] md:text-[13px] tracking-[0.35em] font-light opacity-60">
                   {t.heroSub}
                 </p>
               </div>
