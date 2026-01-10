@@ -16,16 +16,16 @@ export const ARTIFACTS: Artifact[] = [
     id: '1',
     title: { EN: 'VISION', RU: 'ВИДЕНИЕ' },
     price: '$2,400',
-    imageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/vision-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
     description: { EN: 'THE BLUEPRINT OF DOMINANCE.', RU: 'ЧЕРТЕЖ ДОМИНИРОВАНИЯ.' },
-    materials: { 
+    materials: {
       EN: ['AIRCRAFT GRADE ALUMINUM', 'TEMPERED CRYSTAL', 'LIQUID SILICON'],
       RU: ['АВИАЦИОННЫЙ АЛЮМИНИЙ', 'ЗАКАЛЕННЫЙ КРИСТАЛЛ', 'ЖИДКИЙ КРЕМНИЙ']
     },
     gallery: [
-      'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800',
+      '/images/artifacts/vision-main.JPG',
       ...MOCK_GALLERY
     ]
   },
@@ -33,7 +33,7 @@ export const ARTIFACTS: Artifact[] = [
     id: '2',
     title: { EN: 'POWER', RU: 'СИЛА' },
     price: '$3,800',
-    imageUrl: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/power-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
     description: { EN: 'RESERVE CURRENCY OF THE ELITE.', RU: 'РЕЗЕРВНАЯ ВАЛЮТА ЭЛИТЫ.' },
@@ -42,7 +42,7 @@ export const ARTIFACTS: Artifact[] = [
       RU: ['УГЛЕРОДНОЕ ВОЛОКНО', 'ТИТАНОВЫЙ КОМПОЗИТ', 'НЕОДИМОВЫЕ МАГНИТЫ']
     },
     gallery: [
-      'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=800',
+      '/images/artifacts/power-main.JPG',
       ...MOCK_GALLERY
     ]
   },
