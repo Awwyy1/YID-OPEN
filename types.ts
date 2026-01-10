@@ -5,15 +5,25 @@ export enum AccessLevel {
   ARCHIVE = 'LEVEL 03 ARCHIVE'
 }
 
+export interface LocalizedText {
+  EN: string;
+  RU: string;
+}
+
+export interface LocalizedArray {
+  EN: string[];
+  RU: string[];
+}
+
 export interface Artifact {
   id: string;
-  title: string;
+  title: LocalizedText;
   price?: string;
   imageUrl: string;
   isLocked: boolean;
   level: AccessLevel;
-  description: string;
-  materials?: string[];
+  description: LocalizedText;
+  materials?: LocalizedArray;
   gallery?: string[];
 }
 

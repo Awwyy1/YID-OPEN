@@ -5,7 +5,7 @@ import { ACCENT_COLOR } from '../constants';
 import { UI_TRANSLATIONS } from '../translations';
 
 interface ProductViewProps {
-  artifact: any;
+  artifact: Artifact;
   theme: Theme;
   language: Language;
   onClose: () => void;
@@ -20,9 +20,9 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
   const borderColor = isDark ? 'border-white/10' : 'border-black/10';
   const t = UI_TRANSLATIONS[language];
 
-  const title = artifact.title[language] || artifact.title.EN;
-  const description = artifact.description[language] || artifact.description.EN;
-  const materials = artifact.materials[language] || artifact.materials.EN;
+  const title = artifact.title?.[language] || artifact.title?.EN || '';
+  const description = artifact.description?.[language] || artifact.description?.EN || '';
+  const materials = artifact.materials?.[language] || artifact.materials?.EN || [];
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';

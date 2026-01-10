@@ -21,8 +21,15 @@ const VaultDrawer: React.FC<VaultDrawerProps> = ({ isOpen, onClose, items, onRem
   const borderColor = isDark ? 'border-white/10' : 'border-black/10';
   const t = UI_TRANSLATIONS[language];
 
+  const parsePrice = (priceStr?: string): number => {
+    if (!priceStr) return 0;
+    const numStr = priceStr.replace(/[^0-9]/g, '');
+    const parsed = parseInt(numStr, 10);
+    return isNaN(parsed) ? 0 : parsed;
+  };
+
   const totalPrice = items.reduce((sum, item) => {
-    const price = parseInt(item.artifact.price?.replace(/[^0-9]/g, '') || '0');
+    const price = parsePrice(item.artifact.price);
     return sum + (price * item.quantity);
   }, 0);
 
@@ -61,15 +68,17 @@ const VaultDrawer: React.FC<VaultDrawerProps> = ({ isOpen, onClose, items, onRem
             </div>
           ) : (
             <div className="space-y-8">
-              {items.map((item) => (
+              {items.map((item) => {
+                const title = item.artifact.title?.[language] || item.artifact.title?.EN || '';
+                return (
                 <div key={item.artifact.id} className="group relative flex gap-6 pb-8 border-b border-white/5 last:border-0">
                   <div className="w-24 aspect-square overflow-hidden border border-white/5 bg-neutral-900/50">
-                    <img src={item.artifact.imageUrl} alt={item.artifact.title[language]} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                    <img src={item.artifact.imageUrl} alt={title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
                   </div>
                   <div className="flex-1 flex flex-col justify-between py-1">
                     <div className="flex justify-between items-start">
                       <div>
-                        <h3 className="text-sm font-black tracking-widest">{item.artifact.title[language]}</h3>
+                        <h3 className="text-sm font-black tracking-widest">{title}</h3>
                         <p className="text-[9px] opacity-30 tracking-[0.2em] mt-1">REF: {item.artifact.id.padStart(4, '0')}</p>
                       </div>
                       <p className="text-sm font-mono tracking-tighter" style={{ color: ACCENT_COLOR }}>{item.artifact.price}</p>
@@ -93,7 +102,8 @@ const VaultDrawer: React.FC<VaultDrawerProps> = ({ isOpen, onClose, items, onRem
                     </div>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>

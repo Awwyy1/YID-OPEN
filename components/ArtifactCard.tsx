@@ -5,7 +5,7 @@ import { ACCENT_COLOR } from '../constants';
 import { UI_TRANSLATIONS } from '../translations';
 
 interface ArtifactCardProps {
-  artifact: any;
+  artifact: Artifact;
   theme: Theme;
   language: Language;
   onLockedClick: () => void;
@@ -17,8 +17,8 @@ const ArtifactCard: React.FC<ArtifactCardProps> = ({ artifact, theme, language, 
   const [isHovered, setIsHovered] = useState(false);
   const t = UI_TRANSLATIONS[language];
 
-  const title = artifact.title[language] || artifact.title.EN;
-  const description = artifact.description[language] || artifact.description.EN;
+  const title = artifact.title?.[language] || artifact.title?.EN || '';
+  const description = artifact.description?.[language] || artifact.description?.EN || '';
 
   if (artifact.isLocked) {
     return (

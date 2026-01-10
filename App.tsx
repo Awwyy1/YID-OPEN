@@ -18,7 +18,7 @@ const App: React.FC = () => {
   const [language, setLanguage] = useState<Language>('EN');
   const [currentPage, setCurrentPage] = useState<Page>('home');
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
-  const [selectedArtifact, setSelectedArtifact] = useState<any | null>(null);
+  const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(null);
   const [isVaultOpen, setIsVaultOpen] = useState(false);
   const [notification, setNotification] = useState<string | null>(null);
 
@@ -40,7 +40,7 @@ const App: React.FC = () => {
 
   const showNotification = (msg: string) => setNotification(msg);
 
-  const addToCart = (artifact: any) => {
+  const addToCart = (artifact: Artifact) => {
     setCartItems(prev => {
       const existing = prev.find(item => item.artifact.id === artifact.id);
       if (existing) {
@@ -178,10 +178,15 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen ${bgColor} ${textColor} selection:bg-[${ACCENT_COLOR}] transition-colors duration-500 overflow-x-hidden uppercase`}>
+    <div className={`min-h-screen ${bgColor} ${textColor} transition-colors duration-500 overflow-x-hidden uppercase`} style={{ ['--selection-color' as any]: ACCENT_COLOR }}>
       {!selectedArtifact && (
         <div className="fixed inset-0 pointer-events-none noise-bg opacity-[0.03]"></div>
       )}
+      <style>{`
+        ::selection {
+          background-color: ${ACCENT_COLOR};
+        }
+      `}</style>
 
       <Header 
         theme={theme} 
@@ -220,13 +225,13 @@ const App: React.FC = () => {
         {/* NEW SYSTEM NOTIFICATION */}
         {notification && (
           <div className="fixed top-24 right-6 z-[300] pointer-events-none flex flex-col items-end">
-            <div className={`px-5 py-3 border border-[${ACCENT_COLOR}] backdrop-blur-3xl bg-black/90 shadow-[0_0_40px_rgba(0,191,255,0.3)] animate-in fade-in slide-in-from-right-8 duration-300 flex items-center gap-4`}>
+            <div className="px-5 py-3 border backdrop-blur-3xl bg-black/90 shadow-[0_0_40px_rgba(0,191,255,0.3)] animate-in fade-in slide-in-from-right-8 duration-300 flex items-center gap-4" style={{ borderColor: ACCENT_COLOR }}>
               <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
               <p className="text-[11px] tracking-[0.4em] font-black text-white uppercase">{notification}</p>
               <div className="h-4 w-px bg-white/10 ml-2"></div>
               <p className="text-[8px] tracking-[0.2em] text-[#00BFFF] font-mono">STATUS: OK</p>
             </div>
-            <div className={`h-0.5 bg-[${ACCENT_COLOR}] w-full origin-right animate-out slide-out-to-right-full duration-[2500ms] ease-linear`}></div>
+            <div className="h-0.5 w-full origin-right animate-out slide-out-to-right-full duration-[2500ms] ease-linear" style={{ backgroundColor: ACCENT_COLOR }}></div>
           </div>
         )}
 
