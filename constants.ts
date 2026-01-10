@@ -3,14 +3,6 @@ import { Artifact, AccessLevel } from './types';
 
 export const ACCENT_COLOR = '#00BFFF';
 
-const MOCK_GALLERY = [
-  'https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=800'
-];
-
 export const ARTIFACTS: Artifact[] = [
   {
     id: '1',
@@ -26,7 +18,11 @@ export const ARTIFACTS: Artifact[] = [
     },
     gallery: [
       '/images/artifacts/vision-main.JPG',
-      ...MOCK_GALLERY
+      '/images/gallery/vision-1.JPG',
+      '/images/gallery/vision-2.JPG',
+      '/images/gallery/vision-3.JPG',
+      '/images/gallery/vision-4.JPG',
+      '/images/gallery/vision-5.JPG'
     ]
   },
   {
@@ -43,14 +39,18 @@ export const ARTIFACTS: Artifact[] = [
     },
     gallery: [
       '/images/artifacts/power-main.JPG',
-      ...MOCK_GALLERY
+      '/images/gallery/power-1.JPG',
+      '/images/gallery/power-2.JPG',
+      '/images/gallery/power-3.JPG',
+      '/images/gallery/power-4.JPG',
+      '/images/gallery/power-5.JPG'
     ]
   },
   {
     id: '3',
     title: { EN: 'SILENCE', RU: 'ТИШИНА' },
     price: '$1,950',
-    imageUrl: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/silence-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
     description: { EN: 'THE ULTIMATE DEFENSIVE POSTURE.', RU: 'СОВЕРШЕННАЯ ЗАЩИТНАЯ ПОЗИЦИЯ.' },
@@ -59,14 +59,18 @@ export const ARTIFACTS: Artifact[] = [
       RU: ['ПОЛИРОВАННЫЙ ОБСИДИАН', 'СИНТЕТИЧЕСКИЙ КВАРЦ', 'ИОНИЗИРОВАННАЯ СТАЛЬ']
     },
     gallery: [
-      'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&q=80&w=800',
-      ...MOCK_GALLERY
+      '/images/artifacts/silence-main.JPG',
+      '/images/gallery/silence-1.JPG',
+      '/images/gallery/silence-2.JPG',
+      '/images/gallery/silence-3.JPG',
+      '/images/gallery/silence-4.JPG',
+      '/images/gallery/silence-5.JPG'
     ]
   },
   {
     id: '4',
     title: { EN: 'ONYX VAULT', RU: 'ОНИКСОВЫЙ СЕЙФ' },
-    imageUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/onyx-vault-main.JPG',
     isLocked: true,
     level: AccessLevel.LIMITED,
     description: { EN: 'HIDDEN ARCHIVE ACCESS.', RU: 'ДОСТУП К СКРЫТОМУ АРХИВУ.' }
@@ -74,7 +78,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '5',
     title: { EN: 'GILDED ARMOR', RU: 'ЗОЛОТАЯ БРОНЯ' },
-    imageUrl: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/gilded-armor-main.JPG',
     isLocked: true,
     level: AccessLevel.LIMITED,
     description: { EN: 'BIOMETRIC PROTECTION SUIT.', RU: 'БИОМЕТРИЧЕСКИЙ КОСТЮМ ЗАЩИТЫ.' }
@@ -82,7 +86,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '6',
     title: { EN: 'CITADEL 01', RU: 'ЦИТАДЕЛЬ 01' },
-    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/citadel-main.JPG',
     isLocked: true,
     level: AccessLevel.LIMITED,
     description: { EN: 'TERRITORIAL CONTROL HUB.', RU: 'УЗЕЛ КОНТРОЛЯ ТЕРРИТОРИИ.' }
@@ -90,7 +94,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '7',
     title: { EN: 'MONOLITH', RU: 'МОНОЛИТ' },
-    imageUrl: 'https://images.unsplash.com/photo-1518005020250-675f04029212?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/monolith-main.JPG',
     isLocked: true,
     level: AccessLevel.ARCHIVE,
     description: { EN: 'LIMITED 01/50. SCULPTED CORE.', RU: 'ЛИМИТ 01/50. СКУЛЬПТУРНОЕ ЯДРО.' }
@@ -98,7 +102,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '8',
     title: { EN: 'VOID', RU: 'ПУСТОТА' },
-    imageUrl: 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/void-main.JPG',
     isLocked: true,
     level: AccessLevel.ARCHIVE,
     description: { EN: 'LIMITED 01/50. TOTAL ABSORPTION.', RU: 'ЛИМИТ 01/50. ПОЛНОЕ ПОГЛОЩЕНИЕ.' }
@@ -106,7 +110,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '9',
     title: { EN: 'ECHO', RU: 'ЭХО' },
-    imageUrl: 'https://images.unsplash.com/photo-1506318137071-a8e063b4bcc0?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/artifacts/echo-main.JPG',
     isLocked: true,
     level: AccessLevel.ARCHIVE,
     description: { EN: 'LIMITED 01/50. RESONANCE CHAMBER.', RU: 'ЛИМИТ 01/50. РЕЗОНАНСНАЯ КАМЕРА.' }
