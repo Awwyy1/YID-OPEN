@@ -97,13 +97,9 @@ const App: React.FC = () => {
                 <h2 className="text-5xl md:text-8xl font-black tracking-tighter leading-none mb-4 whitespace-pre-line">
                   {t.heroTitle}
                 </h2>
-                <div className="flex items-center justify-center gap-4">
-                  <span className={`h-px w-12 ${dividerColor}`}></span>
-                  <p className="text-xs md:text-sm tracking-[0.5em] font-light opacity-60">
-                    {t.heroSub}
-                  </p>
-                  <span className={`h-px w-12 ${dividerColor}`}></span>
-                </div>
+                <p className="text-xs md:text-sm tracking-[0.5em] font-light opacity-60">
+                  {t.heroSub}
+                </p>
               </div>
             </section>
 

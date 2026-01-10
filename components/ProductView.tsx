@@ -51,15 +51,12 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
           {/* Left: Images */}
           <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:h-full">
             <div className={`relative flex-1 min-h-[350px] md:min-h-[500px] lg:min-h-0 overflow-hidden border ${borderColor} bg-neutral-900`}>
-               <img 
+               <img
                  key={activeImage}
-                 src={activeImage} 
-                 alt={title} 
+                 src={activeImage}
+                 alt={title}
                  className="w-full h-full object-cover animate-in fade-in zoom-in-95 duration-700"
                />
-               <div className="absolute top-4 left-4 bg-black/40 backdrop-blur-md border border-white/10 px-3 py-1 text-[8px] tracking-[0.3em] opacity-60">
-                 PRIMARY RENDER V01
-               </div>
             </div>
             
             <div className="space-y-3">
