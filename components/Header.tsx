@@ -30,8 +30,6 @@ const Header: React.FC<HeaderProps> = ({
   const textColor = isDark ? 'text-white' : 'text-black';
   const borderColor = isDark ? 'border-white/10' : 'border-black/10';
   const bgColor = isDark ? 'bg-black' : 'bg-white';
-  const accentTextColor = `text-[${ACCENT_COLOR}]`;
-  const accentBgColor = `bg-[${ACCENT_COLOR}]`;
 
   const t = UI_TRANSLATIONS[language];
 
@@ -52,28 +50,30 @@ const Header: React.FC<HeaderProps> = ({
     <>
       <header className={`fixed top-0 left-0 w-full z-[110] border-b ${borderColor} backdrop-blur-md bg-transparent`}>
         <div className="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between relative">
-          <button 
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="group flex flex-col gap-1.5 focus:outline-none relative z-[120]" 
+            className="group flex flex-col gap-1.5 focus:outline-none relative z-[120]"
             aria-label="Menu"
           >
-            <span className={`h-px transition-all duration-300 ${isMenuOpen ? 'w-8 rotate-45 translate-y-2' : 'w-8'} ${accentBgColor}`}></span>
-            <span className={`h-px transition-all duration-300 ${isMenuOpen ? 'w-8 -rotate-45' : 'w-5 group-hover:w-8'} ${accentBgColor}`}></span>
+            <span className={`h-px transition-all duration-300 ${isMenuOpen ? 'w-8 rotate-45 translate-y-2' : 'w-8'}`} style={{ backgroundColor: ACCENT_COLOR }}></span>
+            <span className={`h-px transition-all duration-300 ${isMenuOpen ? 'w-8 -rotate-45' : 'w-5 group-hover:w-8'}`} style={{ backgroundColor: ACCENT_COLOR }}></span>
           </button>
 
           <div className="absolute left-1/2 -translate-x-1/2 text-center flex items-center justify-center h-full">
-            <button 
+            <button
               onClick={() => { onNavigate('home'); setIsMenuOpen(false); }}
-              className={`text-4xl font-black tracking-tight leading-none pointer-events-auto transition-transform active:scale-95 ${accentTextColor}`}
+              className="text-4xl font-black tracking-tight leading-none pointer-events-auto transition-transform active:scale-95"
+              style={{ color: ACCENT_COLOR }}
             >
               YID
             </button>
           </div>
 
           <div className="flex items-center gap-1 md:gap-4 relative z-[120]">
-            <button 
+            <button
               onClick={toggleTheme}
-              className={`relative w-10 h-10 group focus:outline-none transition-transform active:scale-90 flex items-center justify-center ${accentTextColor}`}
+              className="relative w-10 h-10 group focus:outline-none transition-transform active:scale-90 flex items-center justify-center"
+              style={{ color: ACCENT_COLOR }}
               aria-label="Toggle Mode"
             >
               <div className={`w-5 h-5 border border-current rounded-full flex items-center justify-center transition-all duration-500`}>
@@ -82,9 +82,10 @@ const Header: React.FC<HeaderProps> = ({
               </div>
             </button>
 
-            <button 
+            <button
               onClick={onVaultClick}
-              className={`group relative flex items-center justify-center w-10 h-10 focus:outline-none transition-all active:scale-95 ${accentTextColor}`}
+              className="group relative flex items-center justify-center w-10 h-10 focus:outline-none transition-all active:scale-95"
+              style={{ color: ACCENT_COLOR }}
             >
               <svg className="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M8 8V7c0-2.2 1.8-4 4-4s4 1.8 4 4v1" />
@@ -117,7 +118,7 @@ const Header: React.FC<HeaderProps> = ({
                 >
                   {link.label}
                 </button>
-                <div className={`h-1 w-12 md:w-24 bg-[${ACCENT_COLOR}] mt-1 md:mt-2 transition-transform duration-700 origin-left ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} style={{ transitionDelay: `${idx * 150}ms` }}></div>
+                <div className={`h-1 w-12 md:w-24 mt-1 md:mt-2 transition-transform duration-700 origin-left ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} style={{ backgroundColor: ACCENT_COLOR, transitionDelay: `${idx * 150}ms` }}></div>
               </div>
             ))}
           </nav>
