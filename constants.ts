@@ -7,7 +7,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '1',
     title: { EN: 'MUSTANG 66', RU: 'МУСТАНГ 66' },
-    price: '$2,400',
+    price: '$139',
     imageUrl: '/images/artifacts/vision-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -28,7 +28,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '2',
     title: { EN: 'STINGRAY 67', RU: 'СТИНГРЕЙ 67' },
-    price: '$3,800',
+    price: '$139',
     imageUrl: '/images/artifacts/power-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -49,7 +49,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '3',
     title: { EN: 'FASTBACK 65', RU: 'ФАСТБЭК 65' },
-    price: '$1,950',
+    price: '$139',
     imageUrl: '/images/artifacts/silence-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -70,7 +70,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '4',
     title: { EN: 'WEALTH', RU: 'БОГАТСТВО' },
-    price: '$2,800',
+    price: '$99',
     imageUrl: '/images/artifacts/artifact-4-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -91,7 +91,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '5',
     title: { EN: 'LEGACY', RU: 'НАСЛЕДИЕ' },
-    price: '$3,200',
+    price: '$139',
     imageUrl: '/images/artifacts/artifact-5-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -112,7 +112,7 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '6',
     title: { EN: 'EMPIRE', RU: 'ИМПЕРИЯ' },
-    price: '$2,600',
+    price: '$99',
     imageUrl: '/images/artifacts/artifact-6-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
