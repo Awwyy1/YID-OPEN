@@ -46,11 +46,11 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
         </div>
       </header>
 
-      <div className="w-full max-w-screen-2xl mx-auto px-6 md:px-12 py-8 md:py-12 pb-16">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+      <div className="w-full max-w-screen-2xl mx-auto px-6 md:px-12 py-8 lg:py-6 pb-16">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
           {/* Left: Images */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-6">
-            <div className={`relative w-full aspect-[4/5] lg:aspect-[3/4] overflow-hidden border ${borderColor} bg-neutral-900`}>
+          <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-4">
+            <div className={`relative w-full aspect-[4/5] lg:aspect-square lg:max-h-[65vh] overflow-hidden border ${borderColor} bg-neutral-900`}>
                <img
                  key={activeImage}
                  src={activeImage}
@@ -80,17 +80,17 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
 
           {/* Right: Content */}
           <div className="w-full lg:w-1/2 flex flex-col">
-            <div className="space-y-8 lg:space-y-6 flex-1">
+            <div className="space-y-8 lg:space-y-4 flex-1">
               <section className="pt-0">
-                <p className="text-[9px] tracking-[0.5em] opacity-30 mb-3">{t.classification}</p>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-none mb-4 lg:mb-6">{title}</h1>
+                <p className="text-[9px] tracking-[0.5em] opacity-30 mb-2 lg:mb-3">{t.classification}</p>
+                <h1 className="text-5xl md:text-6xl lg:text-5xl font-black tracking-tighter leading-none mb-4">{title}</h1>
                 <p className="text-xs md:text-sm tracking-[0.3em] opacity-60 leading-relaxed max-w-lg">{description}</p>
               </section>
 
               {/* Grid Section for Materials and Tech Data - PERFECT Y-ALIGNMENT */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 border-t border-b border-white/5 py-8 lg:py-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 border-t border-b border-white/5 py-8 lg:py-4">
                 {/* Column 1: Materials */}
-                <div className="space-y-6 lg:space-y-4 mb-12 sm:mb-0">
+                <div className="space-y-6 lg:space-y-3 mb-12 sm:mb-0">
                   <p className="text-[9px] tracking-[0.4em] opacity-30 leading-none uppercase h-3">
                     {t.materials}
                   </p>
@@ -105,11 +105,11 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
                 </div>
                 
                 {/* Column 2: Tech Data */}
-                <div className="space-y-6 lg:space-y-4">
+                <div className="space-y-6 lg:space-y-3">
                   <p className="text-[9px] tracking-[0.4em] opacity-30 leading-none uppercase h-3">
                     {t.techData}
                   </p>
-                  <div className="space-y-3 lg:space-y-2 text-[10px] tracking-[0.2em] font-medium opacity-50">
+                  <div className="space-y-3 lg:space-y-1.5 text-[10px] tracking-[0.2em] font-medium opacity-50">
                      <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.mass}</span> <span>4.2 KG</span></div>
                      <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.scale}</span> <span>120x80 CM</span></div>
                      <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.node}</span> <span>YID LABS 01</span></div>
@@ -119,11 +119,11 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
             </div>
 
             {/* Price & Action Block */}
-            <div className={`mt-8 lg:mt-6 p-6 lg:p-8 border ${borderColor} bg-current/5 backdrop-blur-md space-y-6 lg:space-y-8`}>
-              <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-4">
+            <div className={`mt-8 lg:mt-4 p-6 lg:p-6 border ${borderColor} bg-current/5 backdrop-blur-md space-y-6 lg:space-y-5`}>
+              <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-4 lg:gap-3">
                 <div>
                   <p className="text-[9px] tracking-[0.4em] opacity-30 uppercase">{t.valuation}</p>
-                  <p className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mt-1" style={{ color: ACCENT_COLOR }}>{artifact.price}</p>
+                  <p className="text-3xl md:text-4xl lg:text-4xl font-black tracking-tight mt-1" style={{ color: ACCENT_COLOR }}>{artifact.price}</p>
                 </div>
                 <div className="sm:text-right space-y-1">
                   <p className="text-[8px] tracking-[0.2em] opacity-40 uppercase">Estimated Delivery: 3-5 Days</p>
@@ -133,7 +133,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
               
               <button
                 onClick={onAcquire}
-                className="w-full py-5 lg:py-6 text-[11px] font-black tracking-[0.6em] transition-all duration-300 shadow-xl uppercase text-white hover:opacity-90 active:scale-[0.98]"
+                className="w-full py-5 lg:py-4 text-[11px] font-black tracking-[0.6em] transition-all duration-300 shadow-xl uppercase text-white hover:opacity-90 active:scale-[0.98]"
                 style={{ backgroundColor: ACCENT_COLOR }}
               >
                 {t.acquireArtifact}
