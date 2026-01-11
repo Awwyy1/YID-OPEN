@@ -80,21 +80,21 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
 
           {/* Right: Content */}
           <div className="w-full lg:w-1/2 flex flex-col">
-            <div className="space-y-12 flex-1">
+            <div className="space-y-8 lg:space-y-6 flex-1">
               <section className="pt-0">
                 <p className="text-[9px] tracking-[0.5em] opacity-30 mb-3">{t.classification}</p>
-                <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-6">{title}</h1>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-none mb-4 lg:mb-6">{title}</h1>
                 <p className="text-xs md:text-sm tracking-[0.3em] opacity-60 leading-relaxed max-w-lg">{description}</p>
               </section>
 
               {/* Grid Section for Materials and Tech Data - PERFECT Y-ALIGNMENT */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 border-t border-b border-white/5 py-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 border-t border-b border-white/5 py-8 lg:py-6">
                 {/* Column 1: Materials */}
-                <div className="space-y-8 mb-12 sm:mb-0">
+                <div className="space-y-6 lg:space-y-4 mb-12 sm:mb-0">
                   <p className="text-[9px] tracking-[0.4em] opacity-30 leading-none uppercase h-3">
                     {t.materials}
                   </p>
-                  <ul className="space-y-4">
+                  <ul className="space-y-3 lg:space-y-2">
                     {materials?.map((mat, i) => (
                       <li key={i} className="text-[10px] tracking-[0.2em] font-bold flex items-center gap-3">
                         <span className="w-1.5 h-1.5 shrink-0" style={{ backgroundColor: ACCENT_COLOR }}></span>
@@ -105,11 +105,11 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
                 </div>
                 
                 {/* Column 2: Tech Data */}
-                <div className="space-y-8">
+                <div className="space-y-6 lg:space-y-4">
                   <p className="text-[9px] tracking-[0.4em] opacity-30 leading-none uppercase h-3">
                     {t.techData}
                   </p>
-                  <div className="space-y-4 text-[10px] tracking-[0.2em] font-medium opacity-50">
+                  <div className="space-y-3 lg:space-y-2 text-[10px] tracking-[0.2em] font-medium opacity-50">
                      <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.mass}</span> <span>4.2 KG</span></div>
                      <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.scale}</span> <span>120x80 CM</span></div>
                      <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.node}</span> <span>YID LABS 01</span></div>
@@ -119,11 +119,11 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
             </div>
 
             {/* Price & Action Block */}
-            <div className={`mt-12 p-8 border ${borderColor} bg-current/5 backdrop-blur-md space-y-8`}>
+            <div className={`mt-8 lg:mt-6 p-6 lg:p-8 border ${borderColor} bg-current/5 backdrop-blur-md space-y-6 lg:space-y-8`}>
               <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-4">
                 <div>
                   <p className="text-[9px] tracking-[0.4em] opacity-30 uppercase">{t.valuation}</p>
-                  <p className="text-4xl md:text-5xl font-black tracking-tight mt-1" style={{ color: ACCENT_COLOR }}>{artifact.price}</p>
+                  <p className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight mt-1" style={{ color: ACCENT_COLOR }}>{artifact.price}</p>
                 </div>
                 <div className="sm:text-right space-y-1">
                   <p className="text-[8px] tracking-[0.2em] opacity-40 uppercase">Estimated Delivery: 3-5 Days</p>
@@ -131,9 +131,9 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
                 </div>
               </div>
               
-              <button 
+              <button
                 onClick={onAcquire}
-                className="w-full py-6 text-[11px] font-black tracking-[0.6em] transition-all duration-300 shadow-xl uppercase text-white hover:opacity-90 active:scale-[0.98]"
+                className="w-full py-5 lg:py-6 text-[11px] font-black tracking-[0.6em] transition-all duration-300 shadow-xl uppercase text-white hover:opacity-90 active:scale-[0.98]"
                 style={{ backgroundColor: ACCENT_COLOR }}
               >
                 {t.acquireArtifact}
