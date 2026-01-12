@@ -133,26 +133,68 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '7',
     title: { EN: 'ONYX VAULT', RU: 'ОНИКСОВЫЙ СЕЙФ' },
+    price: '$4,200',
     imageUrl: '/images/artifacts/onyx-vault-main.JPG',
-    isLocked: true,
+    isLocked: false,
     level: AccessLevel.LIMITED,
-    description: { EN: 'HIDDEN ARCHIVE ACCESS.', RU: 'ДОСТУП К СКРЫТОМУ АРХИВУ.' }
+    limitedQuantity: 50,
+    description: { EN: 'EXCLUSIVE MASTERPIECE.', RU: 'ЭКСКЛЮЗИВНЫЙ ШЕДЕВР.' },
+    materials: {
+      EN: ['CANVAS PRINT', 'MUSEUM QUALITY', 'BLACK FRAME'],
+      RU: ['ПЕЧАТЬ НА ХОЛСТЕ', 'МУЗЕЙНОЕ КАЧЕСТВО', 'ЧЁРНАЯ РАМА']
+    },
+    gallery: [
+      '/images/artifacts/onyx-vault-main.JPG',
+      '/images/gallery/onyx-vault-1.JPG',
+      '/images/gallery/onyx-vault-2.JPG',
+      '/images/gallery/onyx-vault-3.JPG',
+      '/images/gallery/onyx-vault-4.JPG',
+      '/images/gallery/onyx-vault-5.JPG'
+    ]
   },
   {
     id: '8',
     title: { EN: 'GILDED ARMOR', RU: 'ЗОЛОТАЯ БРОНЯ' },
+    price: '$4,500',
     imageUrl: '/images/artifacts/gilded-armor-main.JPG',
-    isLocked: true,
+    isLocked: false,
     level: AccessLevel.LIMITED,
-    description: { EN: 'BIOMETRIC PROTECTION SUIT.', RU: 'БИОМЕТРИЧЕСКИЙ КОСТЮМ ЗАЩИТЫ.' }
+    limitedQuantity: 50,
+    description: { EN: 'RARE COLLECTOR EDITION.', RU: 'РЕДКОЕ КОЛЛЕКЦИОННОЕ ИЗДАНИЕ.' },
+    materials: {
+      EN: ['PREMIUM CANVAS', 'GOLD ACCENTS', 'LUXURY FRAME'],
+      RU: ['ПРЕМИУМ ХОЛСТ', 'ЗОЛОТЫЕ АКЦЕНТЫ', 'ЛЮКСОВАЯ РАМА']
+    },
+    gallery: [
+      '/images/artifacts/gilded-armor-main.JPG',
+      '/images/gallery/gilded-armor-1.JPG',
+      '/images/gallery/gilded-armor-2.JPG',
+      '/images/gallery/gilded-armor-3.JPG',
+      '/images/gallery/gilded-armor-4.JPG',
+      '/images/gallery/gilded-armor-5.JPG'
+    ]
   },
   {
     id: '9',
     title: { EN: 'CITADEL 01', RU: 'ЦИТАДЕЛЬ 01' },
+    price: '$3,900',
     imageUrl: '/images/artifacts/citadel-main.JPG',
-    isLocked: true,
+    isLocked: false,
     level: AccessLevel.LIMITED,
-    description: { EN: 'TERRITORIAL CONTROL HUB.', RU: 'УЗЕЛ КОНТРОЛЯ ТЕРРИТОРИИ.' }
+    limitedQuantity: 50,
+    description: { EN: 'LIMITED SERIES ARTWORK.', RU: 'ЛИМИТИРОВАННАЯ СЕРИЯ ИСКУССТВА.' },
+    materials: {
+      EN: ['FINE ART PRINT', 'ARCHIVAL QUALITY', 'MODERN FRAME'],
+      RU: ['ХУДОЖЕСТВЕННАЯ ПЕЧАТЬ', 'АРХИВНОЕ КАЧЕСТВО', 'СОВРЕМЕННАЯ РАМА']
+    },
+    gallery: [
+      '/images/artifacts/citadel-main.JPG',
+      '/images/gallery/citadel-1.JPG',
+      '/images/gallery/citadel-2.JPG',
+      '/images/gallery/citadel-3.JPG',
+      '/images/gallery/citadel-4.JPG',
+      '/images/gallery/citadel-5.JPG'
+    ]
   },
   {
     id: '10',
