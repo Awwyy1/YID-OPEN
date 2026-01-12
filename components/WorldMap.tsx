@@ -126,11 +126,11 @@ const WorldMap: React.FC<WorldMapProps> = ({ theme, language, onBack }) => {
                  <button onClick={() => setSelectedNode(null)} className="text-[10px] opacity-30 w-8 h-8 flex items-center justify-center border border-white/10">X</button>
                </div>
                <div className="space-y-4">
-                  <div className="flex justify-between border-b border-white/10 pb-2">
+                  <div className="flex justify-between pb-2">
                     <span className="text-[9px] opacity-40">HOLDER COUNT</span>
                     <span className="text-xs font-black">{nodes.find(n => n.name === selectedNode)?.active}</span>
                   </div>
-                  <div className="flex justify-between border-b border-white/10 pb-2">
+                  <div className="flex justify-between pb-2">
                     <span className="text-[9px] opacity-40">ENCRYPTION</span>
                     <span className="text-xs font-black">ACTIVE</span>
                   </div>
