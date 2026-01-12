@@ -132,92 +132,158 @@ export const ARTIFACTS: Artifact[] = [
   },
   {
     id: '7',
-    title: { EN: 'ONYX VAULT', RU: 'ОНИКСОВЫЙ СЕЙФ' },
-    price: '$4,200',
-    imageUrl: '/images/artifacts/onyx-vault-main.JPG',
+    title: { EN: 'BMW M3 E30', RU: 'BMW M3 E30' },
+    price: '$199',
+    imageUrl: '/images/artifacts/bmw-m3-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,
     limitedQuantity: 50,
-    description: { EN: 'EXCLUSIVE MASTERPIECE.', RU: 'ЭКСКЛЮЗИВНЫЙ ШЕДЕВР.' },
+    description: { EN: 'GERMAN ENGINEERING ICON.', RU: 'ИКОНА НЕМЕЦКОЙ ИНЖЕНЕРИИ.' },
     materials: {
-      EN: ['CANVAS PRINT', 'MUSEUM QUALITY', 'BLACK FRAME'],
-      RU: ['ПЕЧАТЬ НА ХОЛСТЕ', 'МУЗЕЙНОЕ КАЧЕСТВО', 'ЧЁРНАЯ РАМА']
+      EN: ['PREMIUM PRINT', 'GLOSSY FINISH', 'WHITE FRAME'],
+      RU: ['ПРЕМИУМ ПЕЧАТЬ', 'ГЛЯНЦЕВОЕ ПОКРЫТИЕ', 'БЕЛАЯ РАМА']
     },
     gallery: [
-      '/images/artifacts/onyx-vault-main.JPG',
-      '/images/gallery/onyx-vault-1.JPG',
-      '/images/gallery/onyx-vault-2.JPG',
-      '/images/gallery/onyx-vault-3.JPG',
-      '/images/gallery/onyx-vault-4.JPG',
-      '/images/gallery/onyx-vault-5.JPG'
+      '/images/artifacts/bmw-m3-main.JPG',
+      '/images/gallery/bmw-m3-1.JPG',
+      '/images/gallery/bmw-m3-2.JPG',
+      '/images/gallery/bmw-m3-3.JPG',
+      '/images/gallery/bmw-m3-4.JPG',
+      '/images/gallery/bmw-m3-5.JPG'
     ]
   },
   {
     id: '8',
-    title: { EN: 'GILDED ARMOR', RU: 'ЗОЛОТАЯ БРОНЯ' },
-    price: '$4,500',
-    imageUrl: '/images/artifacts/gilded-armor-main.JPG',
+    title: { EN: 'FIGHT CLUB', RU: 'БОЙЦОВСКИЙ КЛУБ' },
+    price: '$199',
+    imageUrl: '/images/artifacts/fight-club-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,
     limitedQuantity: 50,
-    description: { EN: 'RARE COLLECTOR EDITION.', RU: 'РЕДКОЕ КОЛЛЕКЦИОННОЕ ИЗДАНИЕ.' },
+    description: { EN: 'CULT CLASSIC STATEMENT.', RU: 'КУЛЬТОВАЯ КЛАССИКА.' },
     materials: {
-      EN: ['PREMIUM CANVAS', 'GOLD ACCENTS', 'LUXURY FRAME'],
-      RU: ['ПРЕМИУМ ХОЛСТ', 'ЗОЛОТЫЕ АКЦЕНТЫ', 'ЛЮКСОВАЯ РАМА']
+      EN: ['VINTAGE PAPER', 'DISTRESSED FINISH', 'BLACK FRAME'],
+      RU: ['ВИНТАЖНАЯ БУМАГА', 'СОСТАРЕННАЯ ОТДЕЛКА', 'ЧЁРНАЯ РАМА']
     },
     gallery: [
-      '/images/artifacts/gilded-armor-main.JPG',
-      '/images/gallery/gilded-armor-1.JPG',
-      '/images/gallery/gilded-armor-2.JPG',
-      '/images/gallery/gilded-armor-3.JPG',
-      '/images/gallery/gilded-armor-4.JPG',
-      '/images/gallery/gilded-armor-5.JPG'
+      '/images/artifacts/fight-club-main.JPG',
+      '/images/gallery/fight-club-1.JPG',
+      '/images/gallery/fight-club-2.JPG',
+      '/images/gallery/fight-club-3.JPG',
+      '/images/gallery/fight-club-4.JPG',
+      '/images/gallery/fight-club-5.JPG'
     ]
   },
   {
     id: '9',
-    title: { EN: 'CITADEL 01', RU: 'ЦИТАДЕЛЬ 01' },
-    price: '$3,900',
-    imageUrl: '/images/artifacts/citadel-main.JPG',
+    title: { EN: 'LAMBORGHINI', RU: 'ЛАМБОРГИНИ' },
+    price: '$199',
+    imageUrl: '/images/artifacts/lamborghini-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,
     limitedQuantity: 50,
-    description: { EN: 'LIMITED SERIES ARTWORK.', RU: 'ЛИМИТИРОВАННАЯ СЕРИЯ ИСКУССТВА.' },
+    description: { EN: 'ITALIAN SUPERCAR LEGEND.', RU: 'ЛЕГЕНДА ИТАЛЬЯНСКИХ СУПЕРКАРОВ.' },
     materials: {
-      EN: ['FINE ART PRINT', 'ARCHIVAL QUALITY', 'MODERN FRAME'],
-      RU: ['ХУДОЖЕСТВЕННАЯ ПЕЧАТЬ', 'АРХИВНОЕ КАЧЕСТВО', 'СОВРЕМЕННАЯ РАМА']
+      EN: ['CANVAS PRINT', 'SATIN FINISH', 'MODERN FRAME'],
+      RU: ['ПЕЧАТЬ НА ХОЛСТЕ', 'САТИНОВОЕ ПОКРЫТИЕ', 'СОВРЕМЕННАЯ РАМА']
     },
     gallery: [
-      '/images/artifacts/citadel-main.JPG',
-      '/images/gallery/citadel-1.JPG',
-      '/images/gallery/citadel-2.JPG',
-      '/images/gallery/citadel-3.JPG',
-      '/images/gallery/citadel-4.JPG',
-      '/images/gallery/citadel-5.JPG'
+      '/images/artifacts/lamborghini-main.JPG',
+      '/images/gallery/lamborghini-1.JPG',
+      '/images/gallery/lamborghini-2.JPG',
+      '/images/gallery/lamborghini-3.JPG',
+      '/images/gallery/lamborghini-4.JPG',
+      '/images/gallery/lamborghini-5.JPG'
     ]
   },
   {
     id: '10',
+    title: { EN: '1% BETTER', RU: '1% ЛУЧШЕ' },
+    price: '$199',
+    imageUrl: '/images/artifacts/better-main.JPG',
+    isLocked: false,
+    level: AccessLevel.LIMITED,
+    limitedQuantity: 50,
+    description: { EN: 'EXPONENTIAL GROWTH MINDSET.', RU: 'ЭКСПОНЕНЦИАЛЬНЫЙ РОСТ МЫШЛЕНИЯ.' },
+    materials: {
+      EN: ['CANVAS PRINT', 'MATTE FINISH', 'WOOD FRAME'],
+      RU: ['ПЕЧАТЬ НА ХОЛСТЕ', 'МАТОВОЕ ПОКРЫТИЕ', 'ДЕРЕВЯННАЯ РАМА']
+    },
+    gallery: [
+      '/images/artifacts/better-main.JPG',
+      '/images/gallery/better-1.JPG',
+      '/images/gallery/better-2.JPG',
+      '/images/gallery/better-3.JPG',
+      '/images/gallery/better-4.JPG',
+      '/images/gallery/better-5.JPG'
+    ]
+  },
+  {
+    id: '11',
+    title: { EN: 'OKAME MASK', RU: 'МАСКА ОКАМЕ' },
+    price: '$199',
+    imageUrl: '/images/artifacts/okame-main.JPG',
+    isLocked: false,
+    level: AccessLevel.LIMITED,
+    limitedQuantity: 50,
+    description: { EN: 'JAPANESE SYMBOL OF JOY.', RU: 'ЯПОНСКИЙ СИМВОЛ РАДОСТИ.' },
+    materials: {
+      EN: ['FINE ART PRINT', 'TEXTURED PAPER', 'GOLD FRAME'],
+      RU: ['ХУДОЖЕСТВЕННАЯ ПЕЧАТЬ', 'ТЕКСТУРИРОВАННАЯ БУМАГА', 'ЗОЛОТАЯ РАМА']
+    },
+    gallery: [
+      '/images/artifacts/okame-main.JPG',
+      '/images/gallery/okame-1.JPG',
+      '/images/gallery/okame-2.JPG',
+      '/images/gallery/okame-3.JPG',
+      '/images/gallery/okame-4.JPG',
+      '/images/gallery/okame-5.JPG'
+    ]
+  },
+  {
+    id: '12',
+    title: { EN: 'YOU VS YOU', RU: 'ТЫ ПРОТИВ СЕБЯ' },
+    price: '$199',
+    imageUrl: '/images/artifacts/youvsyou-main.JPG',
+    isLocked: false,
+    level: AccessLevel.LIMITED,
+    limitedQuantity: 50,
+    description: { EN: 'INNER BATTLE REFLECTION.', RU: 'ОТРАЖЕНИЕ ВНУТРЕННЕЙ БОРЬБЫ.' },
+    materials: {
+      EN: ['MUSEUM CANVAS', 'PREMIUM QUALITY', 'BLACK FRAME'],
+      RU: ['МУЗЕЙНЫЙ ХОЛСТ', 'ПРЕМИУМ КАЧЕСТВО', 'ЧЁРНАЯ РАМА']
+    },
+    gallery: [
+      '/images/artifacts/youvsyou-main.JPG',
+      '/images/gallery/youvsyou-1.JPG',
+      '/images/gallery/youvsyou-2.JPG',
+      '/images/gallery/youvsyou-3.JPG',
+      '/images/gallery/youvsyou-4.JPG',
+      '/images/gallery/youvsyou-5.JPG'
+    ]
+  },
+  {
+    id: '13',
     title: { EN: 'MONOLITH', RU: 'МОНОЛИТ' },
     imageUrl: '/images/artifacts/monolith-main.JPG',
     isLocked: true,
     level: AccessLevel.ARCHIVE,
-    description: { EN: 'LIMITED 01/50. SCULPTED CORE.', RU: 'ЛИМИТ 01/50. СКУЛЬПТУРНОЕ ЯДРО.' }
+    description: { EN: 'ARCHIVE ACCESS REQUIRED.', RU: 'ТРЕБУЕТСЯ ДОСТУП К АРХИВУ.' }
   },
   {
-    id: '11',
+    id: '14',
     title: { EN: 'VOID', RU: 'ПУСТОТА' },
     imageUrl: '/images/artifacts/void-main.JPG',
     isLocked: true,
     level: AccessLevel.ARCHIVE,
-    description: { EN: 'LIMITED 01/50. TOTAL ABSORPTION.', RU: 'ЛИМИТ 01/50. ПОЛНОЕ ПОГЛОЩЕНИЕ.' }
+    description: { EN: 'ARCHIVE ACCESS REQUIRED.', RU: 'ТРЕБУЕТСЯ ДОСТУП К АРХИВУ.' }
   },
   {
-    id: '12',
+    id: '15',
     title: { EN: 'ECHO', RU: 'ЭХО' },
     imageUrl: '/images/artifacts/echo-main.JPG',
     isLocked: true,
     level: AccessLevel.ARCHIVE,
-    description: { EN: 'LIMITED 01/50. RESONANCE CHAMBER.', RU: 'ЛИМИТ 01/50. РЕЗОНАНСНАЯ КАМЕРА.' }
+    description: { EN: 'ARCHIVE ACCESS REQUIRED.', RU: 'ТРЕБУЕТСЯ ДОСТУП К АРХИВУ.' }
   }
 ];
