@@ -71,7 +71,7 @@ const VaultDrawer: React.FC<VaultDrawerProps> = ({ isOpen, onClose, items, onRem
               {items.map((item) => {
                 const title = item.artifact.title?.[language] || item.artifact.title?.EN || '';
                 return (
-                <div key={item.artifact.id} className="group relative flex gap-6 pb-8 border-b border-white/5 last:border-0">
+                <div key={item.artifact.id} className="group relative flex gap-6 pb-8">
                   <div className="w-24 aspect-square overflow-hidden border border-white/5 bg-neutral-900/50">
                     <img src={item.artifact.imageUrl} alt={title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
                   </div>

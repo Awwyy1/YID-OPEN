@@ -50,7 +50,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
           {/* Left: Images */}
           <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-4">
-            <div className={`relative w-full aspect-[4/5] lg:aspect-square lg:max-h-[65vh] overflow-hidden border ${borderColor} bg-neutral-900`}>
+            <div className={`relative w-full aspect-[4/5] lg:aspect-[4/5] lg:max-h-[70vh] overflow-hidden border ${borderColor} bg-neutral-900`}>
                <img
                  key={activeImage}
                  src={activeImage}
@@ -88,7 +88,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
               </section>
 
               {/* Grid Section for Materials and Tech Data - PERFECT Y-ALIGNMENT */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 border-t border-b border-white/5 py-8 lg:py-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 border-t border-white/5 py-8 lg:py-4">
                 {/* Column 1: Materials */}
                 <div className="space-y-6 lg:space-y-3 mb-12 sm:mb-0">
                   <p className="text-[9px] tracking-[0.4em] opacity-30 leading-none uppercase h-3">
@@ -110,9 +110,9 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
                     {t.techData}
                   </p>
                   <div className="space-y-3 lg:space-y-1.5 text-[10px] tracking-[0.2em] font-medium opacity-50">
-                     <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.mass}</span> <span>4.2 KG</span></div>
-                     <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.scale}</span> <span>120x80 CM</span></div>
-                     <div className="flex justify-between border-b border-white/5 pb-2"><span>{t.node}</span> <span>YID LABS 01</span></div>
+                     <div className="flex justify-between pb-2"><span>{t.mass}</span> <span>4.2 KG</span></div>
+                     <div className="flex justify-between pb-2"><span>{t.scale}</span> <span>120x80 CM</span></div>
+                     <div className="flex justify-between pb-2"><span>{t.node}</span> <span>YID LABS 01</span></div>
                   </div>
                 </div>
               </div>
