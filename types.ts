@@ -25,6 +25,7 @@ export interface Artifact {
   description: LocalizedText;
   materials?: LocalizedArray;
   gallery?: string[];
+  limitedQuantity?: number;
 }
 
 export interface CartItem {
