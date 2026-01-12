@@ -134,14 +134,14 @@ const App: React.FC = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
                 {ARTIFACTS.filter(a => a.level === AccessLevel.LIMITED).map(artifact => (
-                  <ArtifactCard 
-                    key={artifact.id} 
-                    artifact={artifact} 
+                  <ArtifactCard
+                    key={artifact.id}
+                    artifact={artifact}
                     theme={theme}
                     language={language}
                     onLockedClick={() => showNotification(t.verificationRequired)}
-                    onAcquire={() => {}}
-                    onClick={() => {}}
+                    onAcquire={() => addToCart(artifact)}
+                    onClick={() => setSelectedArtifact(artifact)}
                   />
                 ))}
               </div>
