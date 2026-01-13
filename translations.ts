@@ -49,7 +49,7 @@ export const UI_TRANSLATIONS: Record<Language, any> = {
   },
   RU: {
     heroTitle: "ВИЗУАЛЬНЫЙ КАПИТАЛ",
-    heroSub: "ФИНАЛЬНЫЙ АКЦЕНТ ВАШИХ АМБИЦИЙ ОТРАЖЁННЫХ В ДЕКОРЕ",
+    heroSub: "ФИНАЛЬНЫЙ АКЦЕНТ ВАШИХ АМБИЦИЙ ОТРАЖЁННЫЙ В ДЕКОРЕ",
     menuShip: "ДОСТАВКА",
     menuContact: "КОНТАКТЫ",
     menuAbout: "О НАС",
