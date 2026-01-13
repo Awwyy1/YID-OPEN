@@ -9,11 +9,12 @@ interface ProductViewProps {
   theme: Theme;
   language: Language;
   onClose: () => void;
-  onAcquire: () => void;
+  onAcquire: (withLight: boolean) => void;
 }
 
 const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, onClose, onAcquire }) => {
   const [activeImage, setActiveImage] = useState(artifact.imageUrl);
+  const [withLight, setWithLight] = useState(true);
   const isDark = theme === 'dark';
   const bgColor = isDark ? 'bg-black' : 'bg-white';
   const textColor = isDark ? 'text-white' : 'text-black';
@@ -23,6 +24,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
   const title = artifact.title?.[language] || artifact.title?.EN || '';
   const description = artifact.description?.[language] || artifact.description?.EN || '';
   const materials = artifact.materials?.[language] || artifact.materials?.EN || [];
+  const currentPrice = withLight ? artifact.priceWithLight : artifact.priceWithoutLight;
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -110,20 +112,51 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
                     {t.techData}
                   </p>
                   <div className="space-y-3 lg:space-y-1.5 text-[10px] tracking-[0.2em] font-medium opacity-50">
-                     <div className="flex justify-between pb-2"><span>{t.mass}</span> <span>4.2 KG</span></div>
-                     <div className="flex justify-between pb-2"><span>{t.scale}</span> <span>120x80 CM</span></div>
+                     <div className="flex justify-between pb-2"><span>{t.mass}</span> <span>1 KG</span></div>
+                     <div className="flex justify-between pb-2"><span>{t.scale}</span> <span>A2 (42x59.4 CM / 16.5x23.4")</span></div>
                      <div className="flex justify-between pb-2"><span>{t.node}</span> <span>YID LABS 01</span></div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Price & Action Block */}
+            {/* Options & Price Block */}
             <div className={`mt-8 lg:mt-4 p-6 lg:p-6 border ${borderColor} bg-current/5 backdrop-blur-md space-y-6 lg:space-y-5`}>
+              {/* Options Selector */}
+              <div>
+                <p className="text-[9px] tracking-[0.4em] opacity-30 uppercase mb-3">{t.options}</p>
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setWithLight(true)}
+                    className={`flex-1 py-3 text-[10px] font-black tracking-[0.3em] transition-all duration-300 uppercase ${
+                      withLight ? 'text-white' : 'text-white/40 hover:text-white/60'
+                    }`}
+                    style={{
+                      backgroundColor: withLight ? ACCENT_COLOR : 'transparent',
+                      border: `1px solid ${withLight ? ACCENT_COLOR : 'rgba(255,255,255,0.1)'}`
+                    }}
+                  >
+                    {t.withLight}
+                  </button>
+                  <button
+                    onClick={() => setWithLight(false)}
+                    className={`flex-1 py-3 text-[10px] font-black tracking-[0.3em] transition-all duration-300 uppercase ${
+                      !withLight ? 'text-white' : 'text-white/40 hover:text-white/60'
+                    }`}
+                    style={{
+                      backgroundColor: !withLight ? ACCENT_COLOR : 'transparent',
+                      border: `1px solid ${!withLight ? ACCENT_COLOR : 'rgba(255,255,255,0.1)'}`
+                    }}
+                  >
+                    {t.withoutLight}
+                  </button>
+                </div>
+              </div>
+
               <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-4 lg:gap-3">
                 <div>
                   <p className="text-[9px] tracking-[0.4em] opacity-30 uppercase">{t.valuation}</p>
-                  <p className="text-3xl md:text-4xl lg:text-4xl font-black tracking-tight mt-1" style={{ color: ACCENT_COLOR }}>{artifact.price}</p>
+                  <p className="text-3xl md:text-4xl lg:text-4xl font-black tracking-tight mt-1" style={{ color: ACCENT_COLOR }}>{currentPrice}</p>
                 </div>
                 <div className="sm:text-right space-y-1">
                   <p className="text-[8px] tracking-[0.2em] opacity-40 uppercase">{t.estimatedDelivery}</p>
@@ -132,7 +165,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
               </div>
               
               <button
-                onClick={onAcquire}
+                onClick={() => onAcquire(withLight)}
                 className="w-full py-5 lg:py-4 text-[11px] font-black tracking-[0.6em] transition-all duration-300 shadow-xl uppercase text-white hover:opacity-90 active:scale-[0.98]"
                 style={{ backgroundColor: ACCENT_COLOR }}
               >

@@ -42,7 +42,10 @@ export const UI_TRANSLATIONS: Record<Language, any> = {
     mapSecurity: "ENCRYPTION: AES-256",
     globalAccess: "GLOBAL ACCESS TERMINAL",
     estimatedDelivery: "ESTIMATED DELIVERY: 3-5 DAYS",
-    secureEscrow: "SECURE ESCROW ACTIVE"
+    secureEscrow: "SECURE ESCROW ACTIVE",
+    withLight: "WITH BACKLIGHT",
+    withoutLight: "WITHOUT BACKLIGHT",
+    options: "OPTIONS"
   },
   RU: {
     heroTitle: "ВИЗУАЛЬНЫЙ КАПИТАЛ",
@@ -84,6 +87,9 @@ export const UI_TRANSLATIONS: Record<Language, any> = {
     mapSecurity: "ШИФРОВАНИЕ: AES-256",
     globalAccess: "ГЛОБАЛЬНЫЙ ТЕРМИНАЛ ДОСТУПА",
     estimatedDelivery: "ДОСТАВКА: 3-5 ДНЕЙ",
-    secureEscrow: "БЕЗОПАСНАЯ СДЕЛКА АКТИВНА"
+    secureEscrow: "БЕЗОПАСНАЯ СДЕЛКА АКТИВНА",
+    withLight: "С ПОДСВЕТКОЙ",
+    withoutLight: "БЕЗ ПОДСВЕТКИ",
+    options: "ОПЦИИ"
   }
 };

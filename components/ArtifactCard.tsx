@@ -92,7 +92,7 @@ const ArtifactCard: React.FC<ArtifactCardProps> = ({ artifact, theme, language, 
               <p className="text-[10px] tracking-[0.2em] text-white/60 mb-1 uppercase line-clamp-1">{description}</p>
               <h3 className="text-white text-2xl font-black tracking-widest uppercase">{title}</h3>
             </div>
-            <p className="text-white text-lg font-mono tracking-widest" style={{ color: ACCENT_COLOR }}>{artifact.price}</p>
+            <p className="text-white text-lg font-mono tracking-widest" style={{ color: ACCENT_COLOR }}>{artifact.priceWithoutLight}</p>
           </div>
           
           <button 
