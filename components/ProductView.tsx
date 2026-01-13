@@ -50,7 +50,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
           {/* Left: Images */}
           <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-4">
-            <div className={`relative w-full aspect-[4/5] lg:aspect-[4/5] lg:max-h-[70vh] overflow-hidden border ${borderColor} bg-neutral-900`}>
+            <div className={`relative w-full aspect-[4/5] overflow-hidden border ${borderColor} bg-neutral-900`}>
                <img
                  key={activeImage}
                  src={activeImage}
@@ -126,8 +126,8 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
                   <p className="text-3xl md:text-4xl lg:text-4xl font-black tracking-tight mt-1" style={{ color: ACCENT_COLOR }}>{artifact.price}</p>
                 </div>
                 <div className="sm:text-right space-y-1">
-                  <p className="text-[8px] tracking-[0.2em] opacity-40 uppercase">Estimated Delivery: 3-5 Days</p>
-                  <p className="text-[8px] tracking-[0.2em] opacity-40 uppercase">Secure Escrow Active</p>
+                  <p className="text-[8px] tracking-[0.2em] opacity-40 uppercase">{t.estimatedDelivery}</p>
+                  <p className="text-[8px] tracking-[0.2em] opacity-40 uppercase">{t.secureEscrow}</p>
                 </div>
               </div>
               
