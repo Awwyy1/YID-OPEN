@@ -7,7 +7,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '1',
     title: { EN: 'MUSTANG 66', RU: 'МУСТАНГ 66' },
-    price: '$139',
+    priceWithLight: '$139',
+    priceWithoutLight: '$99',
     imageUrl: '/images/artifacts/vision-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -28,7 +29,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '2',
     title: { EN: 'STINGRAY 67', RU: 'СТИНГРЕЙ 67' },
-    price: '$139',
+    priceWithLight: '$139',
+    priceWithoutLight: '$99',
     imageUrl: '/images/artifacts/power-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -49,7 +51,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '3',
     title: { EN: 'FASTBACK 65', RU: 'ФАСТБЭК 65' },
-    price: '$139',
+    priceWithLight: '$139',
+    priceWithoutLight: '$99',
     imageUrl: '/images/artifacts/silence-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -70,7 +73,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '4',
     title: { EN: 'WEALTH', RU: 'БОГАТСТВО' },
-    price: '$99',
+    priceWithLight: '$139',
+    priceWithoutLight: '$99',
     imageUrl: '/images/artifacts/artifact-4-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -91,7 +95,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '5',
     title: { EN: 'LEGACY', RU: 'НАСЛЕДИЕ' },
-    price: '$139',
+    priceWithLight: '$139',
+    priceWithoutLight: '$99',
     imageUrl: '/images/artifacts/artifact-5-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -112,7 +117,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '6',
     title: { EN: 'EMPIRE', RU: 'ИМПЕРИЯ' },
-    price: '$99',
+    priceWithLight: '$139',
+    priceWithoutLight: '$99',
     imageUrl: '/images/artifacts/artifact-6-main.JPG',
     isLocked: false,
     level: AccessLevel.CORE,
@@ -133,7 +139,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '7',
     title: { EN: 'BMW M3 E30', RU: 'BMW M3 E30' },
-    price: '$199',
+    priceWithLight: '$249',
+    priceWithoutLight: '$199',
     imageUrl: '/images/artifacts/bmw-m3-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,
@@ -155,7 +162,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '8',
     title: { EN: 'FIGHT CLUB', RU: 'БОЙЦОВСКИЙ КЛУБ' },
-    price: '$199',
+    priceWithLight: '$249',
+    priceWithoutLight: '$199',
     imageUrl: '/images/artifacts/fight-club-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,
@@ -177,7 +185,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '9',
     title: { EN: 'LAMBORGHINI', RU: 'ЛАМБОРГИНИ' },
-    price: '$199',
+    priceWithLight: '$249',
+    priceWithoutLight: '$199',
     imageUrl: '/images/artifacts/lamborghini-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,
@@ -199,7 +208,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '10',
     title: { EN: '1% BETTER', RU: '1% ЛУЧШЕ' },
-    price: '$199',
+    priceWithLight: '$249',
+    priceWithoutLight: '$199',
     imageUrl: '/images/artifacts/better-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,
@@ -221,7 +231,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '11',
     title: { EN: 'OKAME MASK', RU: 'МАСКА ОКАМЕ' },
-    price: '$199',
+    priceWithLight: '$249',
+    priceWithoutLight: '$199',
     imageUrl: '/images/artifacts/okame-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,
@@ -243,7 +254,8 @@ export const ARTIFACTS: Artifact[] = [
   {
     id: '12',
     title: { EN: 'YOU VS YOU', RU: 'ТЫ ПРОТИВ СЕБЯ' },
-    price: '$199',
+    priceWithLight: '$249',
+    priceWithoutLight: '$199',
     imageUrl: '/images/artifacts/youvsyou-main.JPG',
     isLocked: false,
     level: AccessLevel.LIMITED,

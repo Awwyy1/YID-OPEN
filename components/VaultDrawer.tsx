@@ -8,8 +8,8 @@ interface VaultDrawerProps {
   isOpen: boolean;
   onClose: () => void;
   items: CartItem[];
-  onRemove: (id: string) => void;
-  onUpdateQuantity: (id: string, delta: number) => void;
+  onRemove: (id: string, withLight: boolean) => void;
+  onUpdateQuantity: (id: string, withLight: boolean, delta: number) => void;
   theme: Theme;
   language: Language;
 }
@@ -29,7 +29,8 @@ const VaultDrawer: React.FC<VaultDrawerProps> = ({ isOpen, onClose, items, onRem
   };
 
   const totalPrice = items.reduce((sum, item) => {
-    const price = parsePrice(item.artifact.price);
+    const priceStr = item.withLight ? item.artifact.priceWithLight : item.artifact.priceWithoutLight;
+    const price = parsePrice(priceStr);
     return sum + (price * item.quantity);
   }, 0);
 
@@ -70,8 +71,10 @@ const VaultDrawer: React.FC<VaultDrawerProps> = ({ isOpen, onClose, items, onRem
             <div className="space-y-8">
               {items.map((item) => {
                 const title = item.artifact.title?.[language] || item.artifact.title?.EN || '';
+                const priceStr = item.withLight ? item.artifact.priceWithLight : item.artifact.priceWithoutLight;
+                const optionText = item.withLight ? t.withLight : t.withoutLight;
                 return (
-                <div key={item.artifact.id} className="group relative flex gap-6 pb-8">
+                <div key={`${item.artifact.id}-${item.withLight}`} className="group relative flex gap-6 pb-8">
                   <div className="w-24 aspect-square overflow-hidden border border-white/5 bg-neutral-900/50">
                     <img src={item.artifact.imageUrl} alt={title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
                   </div>
@@ -80,21 +83,22 @@ const VaultDrawer: React.FC<VaultDrawerProps> = ({ isOpen, onClose, items, onRem
                       <div>
                         <h3 className="text-sm font-black tracking-widest">{title}</h3>
                         <p className="text-[9px] opacity-30 tracking-[0.2em] mt-1">REF: {item.artifact.id.padStart(4, '0')}</p>
+                        <p className="text-[8px] opacity-40 tracking-[0.2em] mt-1">{optionText}</p>
                       </div>
-                      <p className="text-sm font-mono tracking-tighter" style={{ color: ACCENT_COLOR }}>{item.artifact.price}</p>
+                      <p className="text-sm font-mono tracking-tighter" style={{ color: ACCENT_COLOR }}>{priceStr}</p>
                     </div>
-                    
+
                     <div className="flex items-center justify-between mt-4">
                       <div className="flex items-center gap-4 border border-current/5 px-3 py-1 bg-current/5">
-                        <button onClick={() => onUpdateQuantity(item.artifact.id, -1)} className="text-xs opacity-30 hover:opacity-100 px-1">-</button>
+                        <button onClick={() => onUpdateQuantity(item.artifact.id, item.withLight, -1)} className="text-xs opacity-30 hover:opacity-100 px-1">-</button>
                         <span className="text-[9px] font-black tracking-widest min-w-[3ch] text-center">
                           {item.quantity.toString().padStart(2, '0')}
                         </span>
-                        <button onClick={() => onUpdateQuantity(item.artifact.id, 1)} className="text-xs opacity-30 hover:opacity-100 px-1">+</button>
+                        <button onClick={() => onUpdateQuantity(item.artifact.id, item.withLight, 1)} className="text-xs opacity-30 hover:opacity-100 px-1">+</button>
                       </div>
-                      
-                      <button 
-                        onClick={() => onRemove(item.artifact.id)}
+
+                      <button
+                        onClick={() => onRemove(item.artifact.id, item.withLight)}
                         className="text-[8px] font-black tracking-[0.4em] opacity-20 hover:opacity-100 transition-all"
                       >
                         [ {language === 'EN' ? 'REMOVE' : 'УДАЛИТЬ'} ]

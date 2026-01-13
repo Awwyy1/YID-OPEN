@@ -40,28 +40,28 @@ const App: React.FC = () => {
 
   const showNotification = (msg: string) => setNotification(msg);
 
-  const addToCart = (artifact: Artifact) => {
+  const addToCart = (artifact: Artifact, withLight: boolean = false) => {
     setCartItems(prev => {
-      const existing = prev.find(item => item.artifact.id === artifact.id);
+      const existing = prev.find(item => item.artifact.id === artifact.id && item.withLight === withLight);
       if (existing) {
-        return prev.map(item => 
-          item.artifact.id === artifact.id 
-            ? { ...item, quantity: item.quantity + 1 } 
+        return prev.map(item =>
+          item.artifact.id === artifact.id && item.withLight === withLight
+            ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       }
-      return [...prev, { artifact, quantity: 1 }];
+      return [...prev, { artifact, quantity: 1, withLight }];
     });
     showNotification(t.addedToVault);
   };
 
-  const removeFromCart = (id: string) => {
-    setCartItems(prev => prev.filter(item => item.artifact.id !== id));
+  const removeFromCart = (id: string, withLight: boolean) => {
+    setCartItems(prev => prev.filter(item => !(item.artifact.id === id && item.withLight === withLight)));
   };
 
-  const updateQuantity = (id: string, delta: number) => {
+  const updateQuantity = (id: string, withLight: boolean, delta: number) => {
     setCartItems(prev => prev.map(item => {
-      if (item.artifact.id === id) {
+      if (item.artifact.id === id && item.withLight === withLight) {
         const newQty = Math.max(1, item.quantity + delta);
         return { ...item, quantity: newQty };
       }
@@ -211,8 +211,8 @@ const App: React.FC = () => {
           theme={theme} 
           language={language}
           onClose={() => setSelectedArtifact(null)}
-          onAcquire={() => {
-            addToCart(selectedArtifact);
+          onAcquire={(withLight) => {
+            addToCart(selectedArtifact, withLight);
           }}
         />
       )}
