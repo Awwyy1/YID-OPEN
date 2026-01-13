@@ -49,7 +49,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
       <div className="w-full max-w-screen-2xl mx-auto px-6 md:px-12 py-8 lg:py-6 pb-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-8">
           {/* Left: Images */}
-          <div className="w-full lg:w-[40%] flex flex-col gap-6 lg:gap-4">
+          <div className="w-full lg:w-[32%] flex flex-col gap-6 lg:gap-4">
             <div className={`relative w-full aspect-[4/5] overflow-hidden border ${borderColor} bg-neutral-900`}>
                <img
                  key={activeImage}
@@ -79,7 +79,7 @@ const ProductView: React.FC<ProductViewProps> = ({ artifact, theme, language, on
           </div>
 
           {/* Right: Content */}
-          <div className="w-full lg:w-[60%] flex flex-col">
+          <div className="w-full lg:w-[68%] flex flex-col">
             <div className="space-y-8 lg:space-y-4 flex-1">
               <section className="pt-0">
                 <p className="text-[9px] tracking-[0.5em] opacity-30 mb-2 lg:mb-3">{t.classification}</p>
