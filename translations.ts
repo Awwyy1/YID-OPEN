@@ -39,7 +39,10 @@ export const UI_TRANSLATIONS: Record<Language, any> = {
     mapActiveNodes: "ACTIVE NODES",
     mapIntegrity: "NETWORK INTEGRITY",
     mapUptime: "UPTIME: 99.99%",
-    mapSecurity: "ENCRYPTION: AES-256"
+    mapSecurity: "ENCRYPTION: AES-256",
+    globalAccess: "GLOBAL ACCESS TERMINAL",
+    estimatedDelivery: "ESTIMATED DELIVERY: 3-5 DAYS",
+    secureEscrow: "SECURE ESCROW ACTIVE"
   },
   RU: {
     heroTitle: "ВИЗУАЛЬНЫЙ КАПИТАЛ",
@@ -78,6 +81,9 @@ export const UI_TRANSLATIONS: Record<Language, any> = {
     mapActiveNodes: "АКТИВНЫЕ УЗЛЫ",
     mapIntegrity: "ЦЕЛОСТНОСТЬ СЕТИ",
     mapUptime: "АПТАЙМ: 99.99%",
-    mapSecurity: "ШИФРОВАНИЕ: AES-256"
+    mapSecurity: "ШИФРОВАНИЕ: AES-256",
+    globalAccess: "ГЛОБАЛЬНЫЙ ТЕРМИНАЛ ДОСТУПА",
+    estimatedDelivery: "ДОСТАВКА: 3-5 ДНЕЙ",
+    secureEscrow: "БЕЗОПАСНАЯ СДЕЛКА АКТИВНА"
   }
 };

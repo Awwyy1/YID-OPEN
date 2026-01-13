@@ -110,9 +110,9 @@ const Header: React.FC<HeaderProps> = ({
           <nav className={`flex flex-col gap-4 md:gap-10 ${textColor}`}>
             {menuLinks.map((link, idx) => (
               <div key={link.label} className="group relative">
-                <button 
+                <button
                   onClick={() => handleLinkClick(link.id)}
-                  className={`text-5xl md:text-8xl font-black tracking-tighter inline-block transition-all duration-500 ease-out hover:italic hover:text-[#00BFFF] text-left uppercase ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'} ${currentPage === link.id ? 'italic text-[#00BFFF]' : ''}`}
+                  className={`text-5xl md:text-6xl font-black tracking-tighter inline-block transition-all duration-500 ease-out hover:italic hover:text-[#00BFFF] text-left uppercase ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'} ${currentPage === link.id ? 'italic text-[#00BFFF]' : ''}`}
                   style={{ transitionDelay: `${idx * 100}ms` }}
                 >
                   {link.label}
@@ -130,7 +130,7 @@ const Header: React.FC<HeaderProps> = ({
                   <button onClick={() => setLanguage('RU')} className={`transition-all duration-300 ${language === 'RU' ? 'opacity-100' : 'opacity-20 hover:opacity-100 hover:text-[#00BFFF]'}`} style={{ color: language === 'RU' ? ACCENT_COLOR : 'inherit' }}>RU</button>
                </div>
                <div className="h-px w-12 bg-current opacity-10"></div>
-               <p className="text-[10px] tracking-[0.5em] opacity-30 uppercase font-black">GLOBAL ACCESS TERMINAL</p>
+               <p className="text-[10px] tracking-[0.5em] opacity-30 uppercase font-black">{t.globalAccess}</p>
             </div>
           </div>
         </div>
