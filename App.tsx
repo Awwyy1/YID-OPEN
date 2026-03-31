@@ -9,6 +9,7 @@ import ShippingView from './components/ShippingView';
 import ContactView from './components/ContactView';
 import AboutView from './components/AboutView';
 import WorldMap from './components/WorldMap';
+import NotFoundView from './components/NotFoundView';
 import { Theme, AccessLevel, Artifact, CartItem, Language, Page } from './types';
 import { ARTIFACTS, ACCENT_COLOR } from './constants';
 import { UI_TRANSLATIONS } from './translations';
@@ -88,6 +89,8 @@ const App: React.FC = () => {
         return <ContactView theme={theme} language={language} onBack={goHome} />;
       case 'about':
         return <AboutView theme={theme} language={language} onBack={goHome} />;
+      case '404':
+        return <NotFoundView theme={theme} language={language} onBack={goHome} />;
       default:
         return (
           <>
