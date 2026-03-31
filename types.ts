@@ -38,4 +38,4 @@ export interface CartItem {
 
 export type Theme = 'dark' | 'light';
 export type Language = 'EN' | 'RU';
-export type Page = 'home' | 'ship' | 'contact' | 'about' | 'map';
+export type Page = 'home' | 'ship' | 'contact' | 'about' | 'map' | '404';
