@@ -17,7 +17,15 @@ import { UI_TRANSLATIONS } from './translations';
 const App: React.FC = () => {
   const [theme, setTheme] = useState<Theme>('dark');
   const [language, setLanguage] = useState<Language>('EN');
-  const [currentPage, setCurrentPage] = useState<Page>('home');
+  const KNOWN_PATHS: Record<string, Page> = {
+    '/': 'home',
+    '/ship': 'ship',
+    '/contact': 'contact',
+    '/about': 'about',
+    '/map': 'map',
+  };
+  const initialPage: Page = KNOWN_PATHS[window.location.pathname] ?? '404';
+  const [currentPage, setCurrentPage] = useState<Page>(initialPage);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [selectedArtifact, setSelectedArtifact] = useState<Artifact | null>(null);
   const [isVaultOpen, setIsVaultOpen] = useState(false);
@@ -32,8 +40,13 @@ const App: React.FC = () => {
     }
   }, [notification]);
 
-  // Scroll to top on page change
+  // Sync URL and scroll on page change
   useEffect(() => {
+    const PAGE_PATHS: Record<Page, string> = {
+      home: '/', ship: '/ship', contact: '/contact',
+      about: '/about', map: '/map', '404': '/404',
+    };
+    window.history.pushState(null, '', PAGE_PATHS[currentPage]);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
 
